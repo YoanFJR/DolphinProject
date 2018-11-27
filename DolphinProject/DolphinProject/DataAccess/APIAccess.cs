@@ -28,9 +28,9 @@ namespace DolphinProject.DataAccess
         }
         #endregion
 
-        public HttpResponseMessage GetTest()
+        public HttpResponseMessage Get(string link)
         {
-            return _client.GetAsync("/api/v1/asset").Result;
+            return _client.GetAsync(link).Result;
         }
     }
 }

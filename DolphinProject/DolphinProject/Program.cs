@@ -9,12 +9,12 @@ namespace DolphinProject
 {
     class Program
     {
-        const string BASEURL = "https://dolphin.jump-technology.com:3472/";
+        const string BASEURL = "https://dolphin.jump-technology.com:3472/api/v1/";
 
         static void Main(string[] args)
         {
             APIAccess api = new APIAccess(BASEURL);
-            System.Net.Http.HttpResponseMessage test = api.GetTest();
+            System.Net.Http.HttpResponseMessage test = api.Get("asset");
 
             Console.ReadKey();
         }
