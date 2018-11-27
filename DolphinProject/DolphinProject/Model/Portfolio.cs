@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace DolphinProject.Model
@@ -13,6 +14,11 @@ namespace DolphinProject.Model
         public string Currency { get; set; }
         public string Type { get; set; }
         public List<Actif> Actifs { get; set; }
+
+        public Portfolio()
+        {
+            Actifs = new List<Actif>();
+        }
 
         public string Serialize()
         {
@@ -47,6 +53,20 @@ namespace DolphinProject.Model
             
             
             return sb.ToString().Replace("'", "\"");
+        }
+
+        public void Deserialize(string json)
+        {
+            Label = Regex.Match(json, "\"label\":\"[a-zA-Z0-9_]*\"").Value.Replace("\"","").Replace("label:", "");
+            Currency = Regex.Match(json, "\"currency\":{\"code\":\"[A-Za-z]*\"}").Value.Replace("\"", "").Replace("currency:{code:", "").Replace("}","");
+            Type = Regex.Match(json, "\"type\":\"[a-zA-Z]*\"").Value.Replace("\"", "").Replace("type:", "");
+            foreach (Match match in Regex.Matches(json, "{\"asset\":{\"asset\":[0-9]*,\"quantity\":[0-9.]*}}"))
+            {
+                Actif actif = new Actif();
+                actif.Asset = Convert.ToInt32(Regex.Match(match.Value, "\"asset\":[0-9]+").Value.Replace("\"asset\":", ""));
+                actif.Quantity = (int)Convert.ToDouble(Regex.Match(match.Value, "\"quantity\":[0-9.]*").Value.Replace("\"quantity\":", "").Replace(".", ","));
+                Actifs.Add(actif);
+            }
         }
     }
 }

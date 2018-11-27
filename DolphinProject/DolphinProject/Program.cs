@@ -16,19 +16,7 @@ namespace DolphinProject
         {
             APIAccess api = new APIAccess(BASEURL);
 
-            Portfolio portfolio = new Portfolio()
-            {
-                Label = "epita_ptf_2",
-                Type = "front",
-                Currency = "EUR",
-                Actifs = new List<Actif>()
-                {
-                    new Actif() { Asset = 599, Quantity = 1 }
-                }
-            };
-
-            bool res = api.PutPortfolio(portfolio);
-            string test = api.GetPortfolio();
+            Portfolio portfolio = api.GetPortfolio();
 
             Console.ReadKey();
         }

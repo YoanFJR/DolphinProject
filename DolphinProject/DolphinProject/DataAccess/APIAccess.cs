@@ -45,10 +45,13 @@ namespace DolphinProject.DataAccess
             return res.IsSuccessStatusCode;
         }
 
-        public string GetPortfolio()
+        public Portfolio GetPortfolio()
         {
             string res = _client.GetStringAsync("portfolio/" + ID_PORTFOLIO + "/dyn_amount_compo").Result;
-            return res;
+            Portfolio portfolio = new Portfolio();
+            portfolio.Deserialize(res);
+
+            return portfolio;
         }
     }
 }
