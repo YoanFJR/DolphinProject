@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DolphinProject.Model;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
@@ -13,6 +15,7 @@ namespace DolphinProject.DataAccess
         #region Constantes
         private const string USERNAME = "epita_user_2";
         private const string PASSWORD = "xeLLV8HzuV6urNNr";
+        private const string ID_PORTFOLIO = "1029";
         private readonly string _baseUrl;
         private readonly HttpClient _client;
         #endregion
@@ -28,9 +31,24 @@ namespace DolphinProject.DataAccess
         }
         #endregion
 
-        public HttpResponseMessage Get(string link)
+        public string Get(string link)
         {
-            return _client.GetAsync(link).Result;
+            return _client.GetStringAsync(link).Result;
+        }
+
+        public bool PutPortfolio(Portfolio portfolio)
+        {
+            string test = portfolio.Serialize();
+            HttpContent content = new StringContent(portfolio.Serialize(), Encoding.UTF8, "application/json");
+
+            var res = _client.PutAsync("portfolio/" + ID_PORTFOLIO + "/dyn_amount_compo", content).Result;
+            return res.IsSuccessStatusCode;
+        }
+
+        public string GetPortfolio()
+        {
+            string res = _client.GetStringAsync("portfolio/" + ID_PORTFOLIO + "/dyn_amount_compo").Result;
+            return res;
         }
     }
 }

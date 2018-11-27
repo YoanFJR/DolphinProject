@@ -1,4 +1,5 @@
 ﻿using DolphinProject.DataAccess;
+using DolphinProject.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +15,20 @@ namespace DolphinProject
         static void Main(string[] args)
         {
             APIAccess api = new APIAccess(BASEURL);
-            System.Net.Http.HttpResponseMessage test = api.Get("asset");
+
+            Portfolio portfolio = new Portfolio()
+            {
+                Label = "epita_ptf_2",
+                Type = "front",
+                Currency = "EUR",
+                Actifs = new List<Actif>()
+                {
+                    new Actif() { Asset = 599, Quantity = 1 }
+                }
+            };
+
+            bool res = api.PutPortfolio(portfolio);
+            string test = api.GetPortfolio();
 
             Console.ReadKey();
         }
