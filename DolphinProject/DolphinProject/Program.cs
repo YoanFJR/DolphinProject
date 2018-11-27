@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DolphinProject.DataAccess;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,9 +9,13 @@ namespace DolphinProject
 {
     class Program
     {
+        const string BASEURL = "https://dolphin.jump-technology.com:3472/";
+
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World !");
+            APIAccess api = new APIAccess(BASEURL);
+            System.Net.Http.HttpResponseMessage test = api.GetTest();
+
             Console.ReadKey();
         }
     }
