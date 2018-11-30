@@ -51,7 +51,6 @@ namespace DolphinProject.DataAccess
             var res = _client.PutAsync("portfolio/" + ID_PORTFOLIO + "/dyn_amount_compo", content).Result;
             return res.IsSuccessStatusCode;
         }
-
         public Portfolio GetPortfolio()
         {
             string res = _client.GetStringAsync("portfolio/" + ID_PORTFOLIO + "/dyn_amount_compo").Result;
@@ -61,11 +60,18 @@ namespace DolphinProject.DataAccess
             return portfolio;
         }
 
+        public void DumpAssetInXml()
+        {
+            string AssetsFromAPI = _client.GetStringAsync("https://dolphin.jump-technology.com:3472/api/v1/asset?columns=TYPE&columns=LABEL&columns=CURRENCY&columns=ASSET_DATABASE_ID&date=2012-01-02").Result;
+            List<Asset> res = JsonConvert.DeserializeObject<List<Asset>>(AssetsFromAPI);
+        }
+
         public bool GetAssets()
         {
+
             for (int i = 597; i <= 1017; i++)
             {
-                string res = _client.GetStringAsync("asset/" + i + "?columns=ASSET_DATABASE_ID&columns=TYPE&columns=LAST_CLOSE_VALUE_IN_CURR&date=2012-01-01").Result;
+                string res = _client.GetStringAsync("asset/" + i + "?columns=ASSET_DATABASE_ID&columns=TYPE&columns=LAST_CLOSE_VALUE_IN_CURR&columns=ASSET_DATABASE_ID&date=2012-01-01").Result;
                 Asset asset = JsonConvert.DeserializeObject<Asset>(res);
             }
             return true;

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,9 +9,23 @@ namespace DolphinProject.Model
 {
     public class Asset
     {
-        public Value ASSET_DATABASE_ID { get; set; }
-        public Value TYPE { get; set; }
-        public Value nav { get; set; }
+        [JsonProperty(PropertyName = "ASSET_DATABASE_ID")]
+        public Value Id { get; set; }
+
+        [JsonProperty(PropertyName = "LABEL")]
+        public Value Label { get; set; }
+
+        [JsonProperty(PropertyName = "TYPE")]
+        public Value Type { get; set; }
+
+        [JsonProperty(PropertyName = "CURRENCY")]
+        public Value Currency { get; set; }
+
+        [JsonProperty(PropertyName = "nav")]
+        public Value Nav { get; set; }
+
+        [JsonProperty(PropertyName = "20")]
+        public Value Sharpe { get; set; }
 
     }
 }
