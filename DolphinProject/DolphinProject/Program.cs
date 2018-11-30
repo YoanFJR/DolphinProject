@@ -16,7 +16,8 @@ namespace DolphinProject
         {
             APIAccess api = new APIAccess(BASEURL);
 
-            Portfolio portfolio = api.GetPortfolio();
+            api.GetAssets();
+
 
             Console.ReadKey();
         }
