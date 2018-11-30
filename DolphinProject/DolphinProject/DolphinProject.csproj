@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAccess\APIAccess.cs" />
+    <Compile Include="DataAccess\XMLAccess.cs" />
     <Compile Include="Model\Actif.cs" />
     <Compile Include="Model\Portfolio.cs" />
     <Compile Include="Program.cs" />
@@ -55,6 +56,11 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DataAccess\AssetDb.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

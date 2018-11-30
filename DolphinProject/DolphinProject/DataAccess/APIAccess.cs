@@ -35,6 +35,13 @@ namespace DolphinProject.DataAccess
         {
             return _client.GetStringAsync(link).Result;
         }
+        public string Post(string link, string body)
+        {
+            HttpContent content = new StringContent(body, Encoding.UTF8, "application/json");
+
+            var res = _client.PostAsync(link, content).Result;
+            return res.IsSuccessStatusCode ? res.Content.ReadAsStringAsync().Result : "";
+        }
 
         public bool PutPortfolio(Portfolio portfolio)
         {

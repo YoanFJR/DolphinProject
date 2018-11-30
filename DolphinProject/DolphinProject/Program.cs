@@ -16,8 +16,9 @@ namespace DolphinProject
         {
             APIAccess api = new APIAccess(BASEURL);
 
-            Portfolio portfolio = api.GetPortfolio();
+            string res = api.Post("ratio/invoke", "{ \"ratio\":[20], \"asset\":[1029, 599] }");
 
+            Console.Write("Terminated...");
             Console.ReadKey();
         }
     }
