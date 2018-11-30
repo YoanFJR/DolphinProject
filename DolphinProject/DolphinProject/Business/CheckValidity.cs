@@ -15,7 +15,8 @@ namespace DolphinProject.Business
             double totalNav = 0;
             foreach (Actif a in portfolio.Actifs)
             {
-                Asset asset = GetAsset(a.Asset);
+                XMLAccess xml = new XMLAccess();
+                Asset asset = xml.GetAsset(a.Asset);
                 totalNav += Convert.ToDouble(asset.nav) * a.Quantity;
             }
             return totalNav;
@@ -26,7 +27,8 @@ namespace DolphinProject.Business
             double totalNav = ComputePortfolioNav(portfolio);
             foreach (Actif a in portfolio.Actifs)
             {
-                Asset asset = GetAsset(a.Asset);
+                XMLAccess xml = new XMLAccess();
+                Asset asset = xml.GetAsset(a.Asset);
                 if (Convert.ToDouble(asset.nav) * a.Quantity / totalNav * 100 < 1 || Convert.ToDouble(asset.nav) * a.Quantity / totalNav * 100 > 10)
                     return false;
             }
