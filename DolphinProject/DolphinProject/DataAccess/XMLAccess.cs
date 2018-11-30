@@ -47,5 +47,22 @@ namespace DolphinProject.DataAccess
                 //root.AppendChild(Asset);
             }
         }
+        }
+
+        public Asset GetAsset(int id)
+        {
+            XmlDocument doc = new XmlDocument();
+            doc.Load("AssetDb.xml");
+
+            Asset asset = new Asset();
+            asset.Id = id;
+            asset.Label = doc.SelectSingleNode("/dolphin/asset[" + id + "]/@label").InnerText;
+            asset.Type = doc.SelectSingleNode("/dolphin/asset[" + id + "]/@type").InnerText;
+            asset.Nav = doc.SelectSingleNode("/dolphin/asset[" + id + "]/@nav").InnerText;
+            asset.Sharpe = doc.SelectSingleNode("/dolphin/asset[" + id + "]/@sharpe").InnerText;
+            asset.Currency = doc.SelectSingleNode("/dolphin/asset[" + id + "]/@currency").InnerText;
+
+            return asset;
+        }
     }
 }
