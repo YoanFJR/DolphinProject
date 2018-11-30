@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Business\CurrencyConverter.cs" />
     <Compile Include="DataAccess\APIAccess.cs" />
     <Compile Include="DataAccess\XMLAccess.cs" />
     <Compile Include="Model\Actif.cs" />
