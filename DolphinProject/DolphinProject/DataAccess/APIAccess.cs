@@ -60,5 +60,16 @@ namespace DolphinProject.DataAccess
 
             return portfolio;
         }
+
+        public bool GetAssets()
+        {
+            for (int i = 597; i <= 1017; i++)
+            {
+                string res = _client.GetStringAsync("asset/" + i + "?columns=ASSET_DATABASE_ID&columns=TYPE&columns=LAST_CLOSE_VALUE_IN_CURR&date=2012-01-01").Result;
+                Asset asset = JsonConvert.DeserializeObject<Asset>(res);
+            }
+            return true;
+            
+        }
     }
 }
