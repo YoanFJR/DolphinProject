@@ -55,11 +55,12 @@ namespace DolphinProject.DataAccess
 
             Asset asset = new Asset();
             asset.Id = new Value() { value = "" + id };
-            asset.Label = new Value() { value = doc.SelectSingleNode("/dolphin/asset[" + id + "]/@label").InnerText };
-            asset.Type = new Value() { value = doc.SelectSingleNode("/dolphin/asset[" + id + "]/@type").InnerText };
-            asset.Nav = new Value() { value = doc.SelectSingleNode("/dolphin/asset[" + id + "]/@nav").InnerText };
-            asset.Sharpe = new Value() { value = doc.SelectSingleNode("/dolphin/asset[" + id + "]/@sharpe").InnerText };
-            asset.Currency = new Value() { value = doc.SelectSingleNode("/dolphin/asset[" + id + "]/@currency").InnerText };
+            XmlNode node =  doc.SelectSingleNode("//asset[@id=" + id + "]");
+            asset.Label = new Value() { value = node.SelectSingleNode("//label").InnerText };
+            asset.Type = new Value() { value = node.SelectSingleNode("//type").InnerText };
+            asset.Nav = new Value() { value = node.SelectSingleNode("//nav").InnerText };
+            asset.Sharpe = new Value() { value = node.SelectSingleNode("//sharpe").InnerText };
+            asset.Currency = new Value() { value = node.SelectSingleNode("//currency").InnerText };
 
             return asset;
         }

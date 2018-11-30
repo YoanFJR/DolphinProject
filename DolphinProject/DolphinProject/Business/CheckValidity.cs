@@ -17,7 +17,7 @@ namespace DolphinProject.Business
             {
                 XMLAccess xml = new XMLAccess();
                 Asset asset = xml.GetAsset(a.Asset);
-                totalNav += Convert.ToDouble(asset.nav) * a.Quantity;
+                totalNav += Convert.ToDouble(asset.Nav) * a.Quantity;
             }
             return totalNav;
         }
@@ -29,7 +29,7 @@ namespace DolphinProject.Business
             {
                 XMLAccess xml = new XMLAccess();
                 Asset asset = xml.GetAsset(a.Asset);
-                if (Convert.ToDouble(asset.nav) * a.Quantity / totalNav * 100 < 1 || Convert.ToDouble(asset.nav) * a.Quantity / totalNav * 100 > 10)
+                if (Convert.ToDouble(asset.Nav) * a.Quantity / totalNav * 100 < 1 || Convert.ToDouble(asset.Nav) * a.Quantity / totalNav * 100 > 10)
                     return false;
             }
             return true;

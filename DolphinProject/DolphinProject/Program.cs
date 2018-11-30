@@ -14,10 +14,13 @@ namespace DolphinProject
 
         static void Main(string[] args)
         {
-            APIAccess api = new APIAccess(BASEURL);
+            /*APIAccess api = new APIAccess(BASEURL);
             
 
             Console.Write("Terminated...");
+            Console.ReadKey();*/
+            XMLAccess xml = new XMLAccess();
+            Asset asset = xml.GetAsset(600);
             Console.ReadKey();
         }
     }

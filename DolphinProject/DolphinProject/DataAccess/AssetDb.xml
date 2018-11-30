@@ -4,14 +4,14 @@
     <label>label</label>
     <type>Type</type>
     <nav>45</nav>
-    <sharp>0.2</sharp>
+    <sharpe>0.2</sharpe>
     <currency>EUR</currency>
   </asset>
   <asset id="600">
     <label>label</label>
     <type>Type</type>
     <nav>45</nav>
-    <sharp>0.2</sharp>
+    <sharpe>0.2</sharpe>
     <currency>EUR</currency>
   </asset>
 </dolphin>
