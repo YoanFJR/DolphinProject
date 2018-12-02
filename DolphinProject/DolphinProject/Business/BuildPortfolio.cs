@@ -1,10 +1,8 @@
-﻿using System;
+﻿using DolphinProject.DataAccess;
+using DolphinProject.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DolphinProject.Model;
-using DolphinProject.DataAccess;
 
 namespace DolphinProject.Business
 {
@@ -30,6 +28,34 @@ namespace DolphinProject.Business
             
             assets = assets.Where(a => a.Nav > 0).OrderByDescending(a => a.Sharpe).Take(50).ToList();
             //assets.RemoveRange(assets.Count - 50, 50);
+            return result;
+        }
+
+        public List<Portfolio> GetPortfolios(List<Asset> assets)
+        {
+            List<Portfolio> result = new List<Portfolio>();
+            foreach (Asset a in assets)
+            {
+                Portfolio portfolio = new Portfolio();
+                portfolio.Actifs.Add(new Actif()
+                {
+                    Asset = Convert.ToInt32(a.Id.value),
+                    Quantity = 1
+                });
+
+                List<Correlation> correlations = a.Correlations.Where(elt => assets.FirstOrDefault(elt2 => elt2.Id.value == elt.AssetIdDest) != null).OrderByDescending(elt => elt.Value).Take(20).ToList();
+
+                foreach (Correlation c in correlations)
+                {
+                    portfolio.Actifs.Add(new Actif()
+                    {
+                        Asset = Convert.ToInt32(c.AssetIdDest),
+                        Quantity = 1
+                    });
+                }
+
+                result.Add(portfolio);
+            }
             return result;
         }
     }
