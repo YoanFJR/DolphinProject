@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DolphinProject.Business;
 
 namespace DolphinProject.Business
 {
@@ -16,8 +17,8 @@ namespace DolphinProject.Business
             foreach (Actif a in portfolio.Actifs)
             {
                 XMLAccess xml = new XMLAccess();
-                Asset asset = xml.GetAsset(a.Asset);
-                totalNav += Convert.ToDouble(asset.Nav) * a.Quantity;
+                Asset asset = xml.GetAssets().FirstOrDefault(elt => elt.Id.value == a.Asset.ToString());
+                totalNav += CurrencyConverter.value_exchange(asset.Currency.ToString(), Convert.ToDouble(asset.Nav) * a.Quantity);
             }
             return totalNav;
         }
@@ -29,8 +30,12 @@ namespace DolphinProject.Business
             {
                 XMLAccess xml = new XMLAccess();
                 Asset asset = xml.GetAsset(a.Asset);
-                if (Convert.ToDouble(asset.Nav) * a.Quantity / totalNav * 100 < 1 || Convert.ToDouble(asset.Nav) * a.Quantity / totalNav * 100 > 10)
+                Console.WriteLine("%: " + CurrencyConverter.value_exchange(asset.Type.ToString(), Convert.ToDouble(asset.Nav)) * a.Quantity / totalNav * 100);
+                if (CurrencyConverter.value_exchange(asset.Currency.ToString(), Convert.ToDouble(asset.Nav)) * a.Quantity / totalNav * 100 < 1 || CurrencyConverter.value_exchange(asset.Currency.ToString(), Convert.ToDouble(asset.Nav) * a.Quantity / totalNav * 100) > 10)
+                {
+                    Console.WriteLine("%: " + CurrencyConverter.value_exchange(asset.Type.ToString(), Convert.ToDouble(asset.Nav)) * a.Quantity / totalNav * 100);    
                     return false;
+                }
             }
             return true;
         }
