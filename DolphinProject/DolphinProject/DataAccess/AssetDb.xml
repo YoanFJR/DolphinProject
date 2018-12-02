@@ -1,17 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <dolphin>
-  <asset id="599">
-    <label>label</label>
-    <type>Type</type>
-    <nav>45</nav>
-    <sharp>0.2</sharp>
-    <currency>EUR</currency>
-  </asset>
-  <asset id="600">
-    <label>label</label>
-    <type>Type</type>
-    <nav>45</nav>
-    <sharp>0.2</sharp>
-    <currency>EUR</currency>
-  </asset>
+  
 </dolphin>

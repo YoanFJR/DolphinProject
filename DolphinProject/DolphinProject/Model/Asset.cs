@@ -22,10 +22,10 @@ namespace DolphinProject.Model
         public Value Currency { get; set; }
 
         [JsonProperty(PropertyName = "nav")]
-        public Value Nav { get; set; }
+        public double Nav { get; set; }
 
         [JsonProperty(PropertyName = "20")]
-        public Value Sharpe { get; set; }
+        public double Sharpe { get; set; }
 
     }
 }

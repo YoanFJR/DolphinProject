@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace DolphinProject.DataAccess
@@ -35,12 +36,23 @@ namespace DolphinProject.DataAccess
         {
             return _client.GetStringAsync(link).Result;
         }
+        public async Task<string> GetAsync(string link)
+        {
+            return await _client.GetStringAsync(link);
+        }
         public string Post(string link, string body)
         {
             HttpContent content = new StringContent(body, Encoding.UTF8, "application/json");
 
             var res = _client.PostAsync(link, content).Result;
             return res.IsSuccessStatusCode ? res.Content.ReadAsStringAsync().Result : "";
+        }
+        public async Task<string> PostAsync(string link, string body)
+        {
+            HttpContent content = new StringContent(body, Encoding.UTF8, "application/json");
+
+            var res = await _client.PostAsync(link, content);
+            return res.IsSuccessStatusCode ? await res.Content.ReadAsStringAsync() : "";
         }
 
         public bool PutPortfolio(Portfolio portfolio)
@@ -58,12 +70,6 @@ namespace DolphinProject.DataAccess
             portfolio.Deserialize(res);
 
             return portfolio;
-        }
-
-        public void DumpAssetInXml()
-        {
-            string AssetsFromAPI = _client.GetStringAsync("https://dolphin.jump-technology.com:3472/api/v1/asset?columns=TYPE&columns=LABEL&columns=CURRENCY&columns=ASSET_DATABASE_ID&date=2012-01-02").Result;
-            List<Asset> res = JsonConvert.DeserializeObject<List<Asset>>(AssetsFromAPI);
         }
 
         public bool GetAssets()

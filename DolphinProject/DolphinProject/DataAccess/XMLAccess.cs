@@ -11,58 +11,35 @@ namespace DolphinProject.DataAccess
 {
     public class XMLAccess
     {
-        public void LoadDocument()
-        {
-            XmlDocument doc = new XmlDocument();
-            doc.Load("AssetDb.xml");
-
-            XmlNode root = doc.FirstChild;
-
-            XElement xml = new XElement("asset",
-                new XElement("golfer",
-                new XAttribute("id", "1"),
-                new XElement("name",
-                new XElement("firstname", "Dan"))));
-        }
-
         public void AddAssets(List<Asset> assets)
         {
-            XmlDocument doc = new XmlDocument();
-            doc.Load("AssetDb.xml");
-            XmlNode root = doc.FirstChild;
-
+            XDocument doc = XDocument.Load("AssetDb.xml");
             foreach (Asset asset in assets)
             {
-                //XElement label = new XElement("label", asset.Label);
-                //XElement type = new XElement("type", asset.Type);
-                //XElement Nav = new XElement("nav", asset.Nav);
-                //XElement Sharpe = new XElement("sharpe", asset.Sharpe);
-                //XElement Currency = new XElement("currency", asset.Currency);
-
-                XNode Asset = new XElement("asset", new XElement("label", asset.Label),
-                                                      new XElement("type", asset.Type),
-                                                      new XElement("nav", asset.Nav),
-                                                      new XElement("sharpe", asset.Sharpe),
-                                                      new XElement("currency", asset.Currency));
-                //root.AppendChild(Asset);
+                XElement Assets = new XElement("asset", new XAttribute("id", asset.Id.value), new XElement("label", asset.Label?.value),
+                                                                                          new XElement("type", asset.Type?.value ?? "null"),
+                                                                                          new XElement("nav", asset.Nav),
+                                                                                          new XElement("sharpe", asset.Sharpe),
+                                                                                          new XElement("currency", asset.Currency?.value ?? "null"));
+                doc.Element("dolphin").Add(Assets);
             }
-        }
+            doc.Save("AssetDb.xml");
         }
 
-        public Asset GetAsset(int id)
-        {
-            XmlDocument doc = new XmlDocument();
-            doc.Load("AssetDb.xml");
+        //public Asset GetAsset(int id)
+        //{
+        //    XmlDocument doc = new XmlDocument();
+        //    doc.Load("AssetDb.xml");
 
-            Asset asset = new Asset();
-            asset.Id = id;
-            asset.Label = doc.SelectSingleNode("/dolphin/asset[" + id + "]/@label").InnerText;
-            asset.Type = doc.SelectSingleNode("/dolphin/asset[" + id + "]/@type").InnerText;
-            asset.Nav = doc.SelectSingleNode("/dolphin/asset[" + id + "]/@nav").InnerText;
-            asset.Sharpe = doc.SelectSingleNode("/dolphin/asset[" + id + "]/@sharpe").InnerText;
-            asset.Currency = doc.SelectSingleNode("/dolphin/asset[" + id + "]/@currency").InnerText;
+        //    Asset asset = new Asset();
+        //    asset.Id = id;
+        //    asset.Label = doc.SelectSingleNode("/dolphin/asset[" + id + "]/@label").InnerText;
+        //    asset.Type = doc.SelectSingleNode("/dolphin/asset[" + id + "]/@type").InnerText;
+        //    asset.Nav = doc.SelectSingleNode("/dolphin/asset[" + id + "]/@nav").InnerText;
+        //    asset.Sharpe = doc.SelectSingleNode("/dolphin/asset[" + id + "]/@sharpe").InnerText;
+        //    asset.Currency = doc.SelectSingleNode("/dolphin/asset[" + id + "]/@currency").InnerText;
 
-            return asset;
-        }
+        //    return asset;
+        //}
     }
 }

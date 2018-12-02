@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DolphinProject", "DolphinProject\DolphinProject.csproj", "{D37DB9FA-45AB-4140-84A3-21CF5A647C8A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DolphinProject.DBDump", "DolphinProject.DBDump\DolphinProject.DBDump.csproj", "{D6C9EA07-6E0F-4409-8D00-F44E7BCD5C07}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{D37DB9FA-45AB-4140-84A3-21CF5A647C8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D37DB9FA-45AB-4140-84A3-21CF5A647C8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D37DB9FA-45AB-4140-84A3-21CF5A647C8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6C9EA07-6E0F-4409-8D00-F44E7BCD5C07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6C9EA07-6E0F-4409-8D00-F44E7BCD5C07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6C9EA07-6E0F-4409-8D00-F44E7BCD5C07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6C9EA07-6E0F-4409-8D00-F44E7BCD5C07}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
