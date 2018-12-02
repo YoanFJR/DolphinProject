@@ -51,7 +51,8 @@ namespace DolphinProject.Business
 
             foreach (Portfolio p in portfolios)
             {
-                api.PutPortfolio(p);
+                Portfolio elt = new CheckValidity().UpgradePortfolio(p);
+                api.PutPortfolio(elt);
 
                 string request = "{\"ratio\":[20],\"asset\":[1029]}";
                 string sharpe = api.Post("ratio/invoke", request);
@@ -70,7 +71,7 @@ namespace DolphinProject.Business
             return portfolios[sharpes.IndexOf(sharpes.Max())];
         }
 
-        public void ComputeProtfolioWithCorrelations(APIAccess api)
+        public Portfolio ComputeProtfolioWithCorrelations()
         {
             List<Portfolio> portfolios = GetPortfolios(GetBestSharpe(50));
             Dictionary<int, int> resultCorrelations = new Dictionary<int, int>();
@@ -91,8 +92,9 @@ namespace DolphinProject.Business
                 res.Actifs.Add(new Actif() { Asset = pair.Key, Quantity = 1 });
             }
 
+            return res;
             //Portfolio p = GetBestSharpPortofolio(api, portfolios);
-            api.PutPortfolio(res);
+            //api.PutPortfolio(res);
         }
 
         public void SubmitBestPortolio(APIAccess api)

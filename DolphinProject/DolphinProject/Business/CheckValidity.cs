@@ -11,13 +11,12 @@ namespace DolphinProject.Business
 {
     class CheckValidity
     {
-        public double ComputePortfolioNav(Portfolio portfolio)
+        public double ComputePortfolioNav(Portfolio portfolio, List<Asset> assets)
         {
             double totalNav = 0;
             foreach (Actif a in portfolio.Actifs)
             {
-                XMLAccess xml = new XMLAccess();
-                Asset asset = xml.GetAssets().FirstOrDefault(elt => elt.Id.value == a.Asset.ToString());
+                Asset asset = assets.FirstOrDefault(elt => elt.Id.value == a.Asset.ToString());
                 totalNav += CurrencyConverter.value_exchange(asset.Currency.ToString(), Convert.ToDouble(asset.Nav) * a.Quantity);
             }
             return totalNav;
@@ -25,17 +24,14 @@ namespace DolphinProject.Business
 
         public bool CheckPortfolioNav(Portfolio portfolio)
         {
-            double totalNav = ComputePortfolioNav(portfolio);
+            double totalNav = ComputePortfolioNav(portfolio, new XMLAccess().GetAssets());
             foreach (Actif a in portfolio.Actifs)
             {
                 XMLAccess xml = new XMLAccess();
                 Asset asset = xml.GetAsset(a.Asset);
-                Console.WriteLine("%: " + CurrencyConverter.value_exchange(asset.Type.ToString(), Convert.ToDouble(asset.Nav)) * a.Quantity / totalNav * 100);
+
                 if (CurrencyConverter.value_exchange(asset.Currency.ToString(), Convert.ToDouble(asset.Nav)) * a.Quantity / totalNav * 100 < 1 || CurrencyConverter.value_exchange(asset.Currency.ToString(), Convert.ToDouble(asset.Nav) * a.Quantity / totalNav * 100) > 10)
-                {
-                    Console.WriteLine("%: " + CurrencyConverter.value_exchange(asset.Type.ToString(), Convert.ToDouble(asset.Nav)) * a.Quantity / totalNav * 100);    
                     return false;
-                }
             }
             return true;
         }
@@ -49,59 +45,27 @@ namespace DolphinProject.Business
             return stock >= 10;
         }
 
-        public Value GetFirstWrongAsset(Portfolio p)
+        public Portfolio UpgradePortfolio (Portfolio p)
         {
-            Value id = new Value();
-            XMLAccess xml = new XMLAccess();
-            double totalNav = ComputePortfolioNav(p);
+            XMLAccess xMLAccess = new XMLAccess();
+            List<Asset> assets = new List<Asset>();
+            foreach(Actif a in p.Actifs)
+                assets.Add(xMLAccess.GetAsset(a.Asset));
 
-            foreach (Actif actif in p.Actifs)
+            if (true)//!CheckPortfolioNav(p))
             {
-                Asset asset = xml.GetAsset(actif.Asset);
-                if (CurrencyConverter.value_exchange(asset.Currency.ToString(), Convert.ToDouble(asset.Nav)) * a.Quantity / totalNav * 100 < 1 || CurrencyConverter.value_exchange(asset.Currency.ToString(), Convert.ToDouble(asset.Nav) * a.Quantity / totalNav * 100) > 10)
-                {
-                    id = asset.Id;
-                    break;
-                }
-            }
-            return id;
-        }
+                double totalnav = ComputePortfolioNav(p, assets) * 100;
+                double target_nav = totalnav * 0.05;
 
-        public Portfolio FixNavAsset(Portfolio p, Value id)
-        {
-            double targeted_nav = ComputePortfolioNav(p) * (5/100);
-            XMLAccess xml = new XMLAccess();
-            Asset asset = xml.GetAsset(Convert.ToInt32(id.value));
-
-            double quantity = targeted_nav / asset.Nav;
-            foreach (Actif actif in p)
-            {
-                if (actif.Asset == Convert.ToInt32(id.value))
+                foreach(Actif actif in p.Actifs)
                 {
-                    p.Actifs.Remove(actif);
-                    p.Actifs.Add(new Actif()
-                    {
-                        Asset = actif.Asset,
-                        Quantity = Convert.ToInt32(quantity)
-                    });
-                    break;
+                    Asset asset = assets.FirstOrDefault(a => a.Id.value == actif.Asset.ToString());
+                    double nav_eur = CurrencyConverter.value_exchange(asset.Type.value, asset.Nav);
+                    actif.Quantity = (int)(target_nav / nav_eur);
                 }
             }
 
             return p;
-        }
-
-        public void upgradePortfolio (Portfolio p)
-        {
-            while (!CheckPortfolioNav(p))
-            {
-                Value wrong_id = GetFirstWrongAsset(p);
-                p = FixNavAsset(p, wrong_id);
-            }
-            const string BASEURL = "https://dolphin.jump-technology.com:3472/api/v1/";
-            APIAccess api = new APIAccess(BASEURL);
-
-            api.PutPortfolio(p);
         }
     }
 }
