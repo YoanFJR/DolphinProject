@@ -15,19 +15,8 @@ namespace DolphinProject.Business
 
             XMLAccess XMLAccess = new XMLAccess();
             List<Asset> assets = XMLAccess.GetAssets();
-            foreach (Asset elt in assets) {
-                if (elt == null)
-                    Console.WriteLine("Id: " + elt.Id);
-                id_list.Add(elt.Id);
-            }
-            foreach (Value id in id_list)
-            {
-                Asset asset = XMLAccess.GetAsset(Convert.ToInt32(id.value));
-                assets.Remove(asset);
-            }
             
-            assets = assets.Where(a => a.Nav > 0).OrderByDescending(a => a.Sharpe).Take(50).ToList();
-            //assets.RemoveRange(assets.Count - 50, 50);
+            assets = assets.Where(a => a.Nav > 0).OrderByDescending(a => a.Sharpe).Take(quantity).ToList();
             return result;
         }
 

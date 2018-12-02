@@ -28,7 +28,8 @@ namespace DolphinProject
 
             api.PutPortfolio(p);*/
 
-            //BuildPortfolio buildPortfolio = new BuildPortfolio();
+            BuildPortfolio buildPortfolio = new BuildPortfolio();
+            buildPortfolio.GetBestSharpe(50);
 
             //List<Asset> test = buildPortfolio.GetBestSharpe(50);
 
