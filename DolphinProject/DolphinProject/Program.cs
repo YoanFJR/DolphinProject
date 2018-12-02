@@ -33,11 +33,11 @@ namespace DolphinProject
             CheckValidity checkValidity = new CheckValidity();
             checkValidity.CheckPortfolioNav(p);
 
-            api.PutPortfolio(p);
+            
 
             BuildPortfolio buildPortfolio = new BuildPortfolio();
 
-            //List<Asset> test = buildPortfolio.GetBestSharpe(50);
+            List<Asset> test = buildPortfolio.GetBestSharpe(50);
 
             Console.Write("Terminated...");
             Console.ReadKey();

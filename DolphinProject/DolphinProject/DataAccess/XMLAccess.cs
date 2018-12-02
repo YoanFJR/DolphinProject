@@ -114,6 +114,14 @@ namespace DolphinProject.DataAccess
                 asset.Nav = Convert.ToDouble(assetElt.Element("nav").Value.Replace(".",","));
                 asset.Sharpe = Convert.ToDouble(assetElt.Element("sharpe").Value.Replace(".", ","));
                 asset.Currency = new Value() { value = assetElt.Element("currency").Value };
+                foreach (XElement elt in assetElt.Element("correlations").Elements("correlation"))
+                {
+                    asset.Correlations.Add(new Correlation()
+                    {
+                        AssetIdDest = elt.Element("dest").Value,
+                        Value = elt.Element("value").Value
+                    });
+                }
                 assets.Add(asset);
             }
 

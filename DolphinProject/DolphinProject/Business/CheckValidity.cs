@@ -37,5 +37,14 @@ namespace DolphinProject.Business
             }
             return true;
         }
+
+        public bool CheckPortfolioCompo(List<Asset> assets)
+        {
+            int stock = 0;
+            foreach (Asset a in assets)
+                if (a.Type.value == "STOCK")
+                    stock++;
+            return stock >= 10;
+        }
     }
 }
