@@ -165,9 +165,12 @@ namespace DolphinProject.DBDump.Business
 
         public void ScrappCorrelation()
         {
+            Console.WriteLine("[LOG] Scrapping db for correlations started...");
             XMLAccess xMLAccess = new XMLAccess();
             List<Asset> assets = xMLAccess.GetAssetsId();
 
+            Console.WriteLine("[LOG] Getting correlations...");
+            int count = 1;
             foreach (Asset asset in assets)
             {
                 StringBuilder sbContent = new StringBuilder("{\"ratio\":[19],\"asset\":[");
@@ -188,11 +191,18 @@ namespace DolphinProject.DBDump.Business
                     string val = Regex.Match(value.Value, "\"value\":\"[\\-0-9,]*\"").Value;
                     val = val.Replace("\"", "").Replace("value:", "");
 
-                    correlation.Add()
-
-                    correlation.Add(new KeyValuePair<string, string>(asset.Id.value, val));
+                    asset.Correlations.Add(new Correlation()
+                    {
+                        AssetIdDest = idAsset,
+                        Value = val
+                    });
                 }
+                Console.SetCursorPosition(0, Console.CursorTop - 1);
+                Console.WriteLine("[LOG] Correlation computed " + count * 100 / assets.Count + "%          ");
+                count++;
             }
+
+            xMLAccess.UpdateCorrelation(assets);
         }
     }
 }
