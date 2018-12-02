@@ -25,7 +25,7 @@ namespace DolphinProject.Business
                     Quantity = 1
                 });
 
-                List<Correlation> correlations = a.Correlations.Where(elt => assets.FirstOrDefault(elt2 => elt2.Id.value == elt.AssetIdDest) != null).OrderByDescending(elt => elt.Value).Take(20).ToList();
+                List<Correlation> correlations = a.Correlations.Where(elt => assets.FirstOrDefault(elt2 => elt2.Id.value == elt.AssetIdDest) != null).OrderBy(elt => Math.Abs(Convert.ToDouble(elt.Value))).Take(19).ToList();
 
                 foreach (Correlation c in correlations)
                 {
