@@ -36,8 +36,8 @@ namespace DolphinProject.DataAccess
             XmlNode node =  doc.SelectSingleNode("//asset[@id=" + id + "]");
             asset.Label = new Value() { value = node.SelectSingleNode("//label").InnerText };
             asset.Type = new Value() { value = node.SelectSingleNode("//type").InnerText };
-            asset.Nav = Convert.ToDouble(node.SelectSingleNode("//nav").InnerText);
-            asset.Sharpe = Convert.ToDouble(node.SelectSingleNode("//sharpe").InnerText);
+            asset.Nav = Convert.ToDouble(node.SelectSingleNode("//nav").InnerText.Replace(".", ","));
+            asset.Sharpe = Convert.ToDouble(node.SelectSingleNode("//sharpe").InnerText.Replace(".", ","));
             asset.Currency = new Value() { value = node.SelectSingleNode("//currency").InnerText };
 
             return asset;
@@ -63,22 +63,19 @@ namespace DolphinProject.DataAccess
 
         public List<Asset> GetAssets()
         {
-            XmlDocument doc = new XmlDocument();
-            doc.Load("AssetDb.xml");
-
             List<Asset> assets = new List<Asset>();
 
-            foreach (XmlNode assetNode in doc.SelectNodes("//asset"))
+            XDocument doc = XDocument.Load("AssetDb.xml");
+            foreach (XElement assetElt in doc.Root.Elements("asset"))
             {
-                assets.Add(new Asset()
-                {
-                    Id = new Value() { value = assetNode.Attributes.GetNamedItem("id").InnerText },
-                    Label = new Value() { value = assetNode.SelectSingleNode("//label").InnerText },
-                    Type = new Value() { value = assetNode.SelectSingleNode("//type").InnerText },
-                    Nav = Convert.ToDouble(assetNode.SelectSingleNode("//nav").InnerText),
-                    Sharpe = Convert.ToDouble(assetNode.SelectSingleNode("//sharpe").InnerText),
-                    Currency = new Value() { value = assetNode.SelectSingleNode("//currency").InnerText }
-            });
+                Asset asset = new Asset();
+                asset.Id = new Value() { value = assetElt.Attribute("id").Value };
+                asset.Label = new Value() { value = assetElt.Element("label").Value };
+                asset.Type = new Value() { value = assetElt.Element("type").Value };
+                asset.Nav = Convert.ToDouble(assetElt.Element("nav").Value.Replace(".",","));
+                asset.Sharpe = Convert.ToDouble(assetElt.Element("sharpe").Value.Replace(".", ","));
+                asset.Currency = new Value() { value = assetElt.Element("currency").Value };
+                assets.Add(asset);
             }
 
             return assets;

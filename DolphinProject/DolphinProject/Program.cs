@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DolphinProject.Business;
 
 namespace DolphinProject
 {
@@ -30,6 +31,10 @@ namespace DolphinProject
             //});
 
             //api.PutPortfolio(p);
+
+            BuildPortfolio buildPortfolio = new BuildPortfolio();
+
+            List<Asset> test = buildPortfolio.GetBestSharpe(50);
 
             Console.Write("Terminated...");
             Console.ReadKey();
