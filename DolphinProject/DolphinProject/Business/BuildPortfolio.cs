@@ -10,14 +10,7 @@ namespace DolphinProject.Business
     {
         public List<Asset> GetBestSharpe(int quantity)
         {
-            List<Asset> result = new List<Asset>();
-            List<Value> id_list = new List<Value>();
-
-            XMLAccess XMLAccess = new XMLAccess();
-            List<Asset> assets = XMLAccess.GetAssets();
-            
-            assets = assets.Where(a => a.Nav > 0).OrderByDescending(a => a.Sharpe).Take(quantity).ToList();
-            return result;
+            return new XMLAccess().GetAssets().Where(a => a.Nav > 0).OrderByDescending(a => a.Sharpe).Take(quantity).ToList();
         }
 
         public List<Portfolio> GetPortfolios(List<Asset> assets)
