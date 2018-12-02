@@ -10,7 +10,7 @@ namespace DolphinProject
 {
     class Program
     {
-        static readonly string BASEURL = "https://dolphin.jump-technology.com:3472/api/v1/";
+        const string BASEURL = "https://dolphin.jump-technology.com:3472/api/v1/";
 
         static void Main(string[] args)
         {

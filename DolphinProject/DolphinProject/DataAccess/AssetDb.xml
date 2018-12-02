@@ -1,4 +1,2558 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <dolphin>
-  
+  <asset id="597">
+    <label>ABERDEEN Global - Japanese Equity Fund - A2 -</label>
+    <type>FUND</type>
+    <nav>5.6938</nav>
+    <sharpe>0.113363340782</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="598">
+    <label>AB Science</label>
+    <type>STOCK</type>
+    <nav>6.08</nav>
+    <sharpe>-0.030186245315</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="599">
+    <label>Accenture</label>
+    <type>STOCK</type>
+    <nav>0</nav>
+    <sharpe>0.20874544371</sharpe>
+    <currency>USD</currency>
+  </asset>
+  <asset id="600">
+    <label>Accor</label>
+    <type>STOCK</type>
+    <nav>19.94</nav>
+    <sharpe>0.107204154849</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="601">
+    <label>Acea</label>
+    <type>STOCK</type>
+    <nav>4.97</nav>
+    <sharpe>0.117337148286</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="602">
+    <label>Adidas</label>
+    <type>STOCK</type>
+    <nav>51.42</nav>
+    <sharpe>0.22504086399</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="603">
+    <label>Adobe Systems</label>
+    <type>STOCK</type>
+    <nav>0</nav>
+    <sharpe>0.386935789516</sharpe>
+    <currency>USD</currency>
+  </asset>
+  <asset id="604">
+    <label>ADP</label>
+    <type>STOCK</type>
+    <nav>53</nav>
+    <sharpe>0.271038678524</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="605">
+    <label>Agrogeneration</label>
+    <type>STOCK</type>
+    <nav>1.91</nav>
+    <sharpe>-0.152898386921</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="606">
+    <label>Airbus Group</label>
+    <type>STOCK</type>
+    <nav>24.5</nav>
+    <sharpe>0.208419751021</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="607">
+    <label>Air France - KLM</label>
+    <type>STOCK</type>
+    <nav>4.14</nav>
+    <sharpe>0.061441050837</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="608">
+    <label>Air Liquide</label>
+    <type>STOCK</type>
+    <nav>97.13</nav>
+    <sharpe>-0.001798229532</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="609">
+    <label>Akka Technologies</label>
+    <type>STOCK</type>
+    <nav>16.77</nav>
+    <sharpe>0.200178136884</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="610">
+    <label>Akzo Nobel</label>
+    <type>STOCK</type>
+    <nav>37.72</nav>
+    <sharpe>0.116650838045</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="611">
+    <label>Albioma (Sechilienne-Sidec)</label>
+    <type>STOCK</type>
+    <nav>10.98</nav>
+    <sharpe>0.075726114144</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="612">
+    <label>Allianz N</label>
+    <type>STOCK</type>
+    <nav>76.71</nav>
+    <sharpe>0.151604787276</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="613">
+    <label>Alstom</label>
+    <type>STOCK</type>
+    <nav>24.095</nav>
+    <sharpe>0.051289689164</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="614">
+    <label>Altamir</label>
+    <type>STOCK</type>
+    <nav>6.01</nav>
+    <sharpe>0.164974689338</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="615">
+    <label>Alten</label>
+    <type>STOCK</type>
+    <nav>18.775</nav>
+    <sharpe>0.25423599918</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="616">
+    <label>Altran Technologies</label>
+    <type>STOCK</type>
+    <nav>2.931</nav>
+    <sharpe>0.146751004143</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="916">
+    <label>Alvarion</label>
+    <type>STOCK</type>
+    <nav>0</nav>
+    <sharpe>-0.02163625487</sharpe>
+    <currency>USD</currency>
+  </asset>
+  <asset id="617">
+    <label>Amadeus IT Hold -A-</label>
+    <type>STOCK</type>
+    <nav>12.56</nav>
+    <sharpe>0.3694615858</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="618">
+    <label>Amazon.Com</label>
+    <type>STOCK</type>
+    <nav>0</nav>
+    <sharpe>0.333529792783</sharpe>
+    <currency>USD</currency>
+  </asset>
+  <asset id="619">
+    <label>American Tower REIT</label>
+    <type>STOCK</type>
+    <nav>0</nav>
+    <sharpe>0.187314097002</sharpe>
+    <currency>USD</currency>
+  </asset>
+  <asset id="1018">
+    <label>Amilton Premium</label>
+    <type>FUND</type>
+    <nav>79.74</nav>
+    <sharpe>0.135358986823</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="620">
+    <label>Amphenol-A</label>
+    <type>STOCK</type>
+    <nav>0</nav>
+    <sharpe>0.092056624348</sharpe>
+    <currency>USD</currency>
+  </asset>
+  <asset id="917">
+    <label>Amundi Oblig Internationales - P -</label>
+    <type>FUND</type>
+    <nav>138.48</nav>
+    <sharpe>0.11180297081</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="621">
+    <label>Amundi Treso Etat -IC-</label>
+    <type>FUND</type>
+    <nav>240863.37</nav>
+    <sharpe>-23.355506404222</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="623">
+    <label>Aperam Reg.</label>
+    <type>STOCK</type>
+    <nav>11.18</nav>
+    <sharpe>0.1209711731</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="624">
+    <label>A P Moller Maersk  B</label>
+    <type>STOCK</type>
+    <nav>38500</nav>
+    <sharpe>-0.139453256995</sharpe>
+    <currency>DKK</currency>
+  </asset>
+  <asset id="625">
+    <label>Apple</label>
+    <type>STOCK</type>
+    <nav>0</nav>
+    <sharpe>-0.065644728476</sharpe>
+    <currency>USD</currency>
+  </asset>
+  <asset id="626">
+    <label>Argan</label>
+    <type>STOCK</type>
+    <nav>11.43</nav>
+    <sharpe>0.272847461129</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="627">
+    <label>Arkema</label>
+    <type>STOCK</type>
+    <nav>56.4</nav>
+    <sharpe>0.076477456361</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="628">
+    <label>Aryzta</label>
+    <type>STOCK</type>
+    <nav>45.4</nav>
+    <sharpe>-0.202157378199</sharpe>
+    <currency>CHF</currency>
+  </asset>
+  <asset id="629">
+    <label>Assystem</label>
+    <type>STOCK</type>
+    <nav>12.05</nav>
+    <sharpe>0.131377007263</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="630">
+    <label>ATARI RGPT</label>
+    <type>STOCK</type>
+    <nav>1.61</nav>
+    <sharpe>-0.074443761111</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="631">
+    <label>Atos</label>
+    <type>STOCK</type>
+    <nav>34.61</nav>
+    <sharpe>0.17752601929</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="632">
+    <label>Aufeminin</label>
+    <type>STOCK</type>
+    <nav>14.69</nav>
+    <sharpe>0.118408048456</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="639">
+    <label>Baring International Umbrella - Hong Kong China- A -</label>
+    <type>FUND</type>
+    <nav>0</nav>
+    <sharpe>0.057343092113</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="640">
+    <label>Barry Callebaut N</label>
+    <type>STOCK</type>
+    <nav>0</nav>
+    <sharpe>0.128635313941</sharpe>
+    <currency>CHF</currency>
+  </asset>
+  <asset id="641">
+    <label>Basf</label>
+    <type>STOCK</type>
+    <nav>54.67</nav>
+    <sharpe>0.050628939407</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="652">
+    <label>BlackRock World Gold Fund - E2 -</label>
+    <type>FUND</type>
+    <nav>39.84</nav>
+    <sharpe>-0.121696734061</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="656">
+    <label>Bouygues</label>
+    <type>STOCK</type>
+    <nav>24.88</nav>
+    <sharpe>0.046933556897</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="931">
+    <label>Carmignac Patrimoine - E - EUR Acc</label>
+    <type>FUND</type>
+    <nav>133.41</nav>
+    <sharpe>0.019071510917</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="660">
+    <label>Carmignac Portfolio Emerging  Patrimoine  - E -</label>
+    <type>FUND</type>
+    <nav>98.16</nav>
+    <sharpe>-0.002959775583</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="932">
+    <label>Carmignac Securite  - A - EUR Acc</label>
+    <type>FUND</type>
+    <nav>1544.55</nav>
+    <sharpe>-0.007597102667</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="661">
+    <label>Carnival</label>
+    <type>STOCK</type>
+    <nav>0</nav>
+    <sharpe>0.090773192989</sharpe>
+    <currency>USD</currency>
+  </asset>
+  <asset id="662">
+    <label>Carrefour</label>
+    <type>STOCK</type>
+    <nav>18.12</nav>
+    <sharpe>-0.043251421384</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="663">
+    <label>Casino Guichard</label>
+    <type>STOCK</type>
+    <nav>65.15</nav>
+    <sharpe>-0.149015298048</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="1019">
+    <label>CBT Vol 7.5 (260)</label>
+    <type>FUND</type>
+    <nav>0</nav>
+    <sharpe>0.059459004835</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="664">
+    <label>Cellectis</label>
+    <type>STOCK</type>
+    <nav>6.45</nav>
+    <sharpe>0.078356838351</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="933">
+    <label>Centifolia - C -</label>
+    <type>FUND</type>
+    <nav>189.31</nav>
+    <sharpe>0.152060101804</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="934">
+    <label>CG Nouvelle Asie</label>
+    <type>FUND</type>
+    <nav>403.09</nav>
+    <sharpe>0.188565655578</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="665">
+    <label>Chargeurs</label>
+    <type>STOCK</type>
+    <nav>3.62</nav>
+    <sharpe>0.197634378826</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="666">
+    <label>Christian Dior</label>
+    <type>STOCK</type>
+    <nav>94.1</nav>
+    <sharpe>0.241433703061</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="667">
+    <label>CIS</label>
+    <type>STOCK</type>
+    <nav>70.5</nav>
+    <sharpe>-0.174701471486</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="668">
+    <label>Claranova</label>
+    <type>STOCK</type>
+    <nav>1.96</nav>
+    <sharpe>-0.045703961399</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="935">
+    <label>CM-CIC PEA Serenite</label>
+    <type>FUND</type>
+    <nav>191.22</nav>
+    <sharpe>-24.176128941154</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="669">
+    <label>CNIM</label>
+    <type>STOCK</type>
+    <nav>56.8</nav>
+    <sharpe>0.092949473152</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="670">
+    <label>Coca-Cola</label>
+    <type>STOCK</type>
+    <nav>0</nav>
+    <sharpe>-0.092786032129</sharpe>
+    <currency>USD</currency>
+  </asset>
+  <asset id="671">
+    <label>Colgate-Palmolive</label>
+    <type>STOCK</type>
+    <nav>0</nav>
+    <sharpe>-0.071701247241</sharpe>
+    <currency>USD</currency>
+  </asset>
+  <asset id="936">
+    <label>Comgest Growth India USD (260)</label>
+    <type>FUND</type>
+    <nav>0</nav>
+    <sharpe>0.126568279736</sharpe>
+    <currency>USD</currency>
+  </asset>
+  <asset id="937">
+    <label>Comgest Monde - C -</label>
+    <type>FUND</type>
+    <nav>821.54</nav>
+    <sharpe>0.268318852345</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="938">
+    <label>Com Gr La Am EUR-Ac (260)</label>
+    <type>FUND</type>
+    <nav>10.24</nav>
+    <sharpe>-0.055483218766</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="672">
+    <label>Continental</label>
+    <type>STOCK</type>
+    <nav>50.48</nav>
+    <sharpe>0.161926718437</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="673">
+    <label>Costco Wholesale</label>
+    <type>STOCK</type>
+    <nav>0</nav>
+    <sharpe>0.216003393839</sharpe>
+    <currency>USD</currency>
+  </asset>
+  <asset id="674">
+    <label>Credit Agricole</label>
+    <type>STOCK</type>
+    <nav>4.433</nav>
+    <sharpe>0.106638894041</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="675">
+    <label>CRH PLC</label>
+    <type>STOCK</type>
+    <nav>0</nav>
+    <sharpe>0.100069314942</sharpe>
+    <currency>GBP</currency>
+  </asset>
+  <asset id="676">
+    <label>CS Communication et Systemes</label>
+    <type>STOCK</type>
+    <nav>2.5</nav>
+    <sharpe>0.078128153308</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="677">
+    <label>CTS Eventim</label>
+    <type>STOCK</type>
+    <nav>23.8</nav>
+    <sharpe>0.045956713663</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="678">
+    <label>Daimler N</label>
+    <type>STOCK</type>
+    <nav>35.365</nav>
+    <sharpe>0.05620654384</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="680">
+    <label>Danone</label>
+    <type>STOCK</type>
+    <nav>49.245</nav>
+    <sharpe>0.044718968243</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="681">
+    <label>Dassault Syst.</label>
+    <type>STOCK</type>
+    <nav>62.85</nav>
+    <sharpe>0.104851417189</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="683">
+    <label>De Longhi</label>
+    <type>STOCK</type>
+    <nav>6.595</nav>
+    <sharpe>0.181610200858</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="684">
+    <label>Derichebourg</label>
+    <type>STOCK</type>
+    <nav>2.423</nav>
+    <sharpe>0.054282158226</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="685">
+    <label>Deutsche Lufthansa  N</label>
+    <type>STOCK</type>
+    <nav>9.544</nav>
+    <sharpe>0.102556371888</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="686">
+    <label>Devoteam</label>
+    <type>STOCK</type>
+    <nav>10.48</nav>
+    <sharpe>0.270969526796</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="687">
+    <label>Direct Energie (Poweo)</label>
+    <type>STOCK</type>
+    <nav>2.45</nav>
+    <sharpe>0.33113142153</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="939">
+    <label>DNCA I Miura - B -</label>
+    <type>FUND</type>
+    <nav>103.96</nav>
+    <sharpe>-0.019643327795</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="940">
+    <label>DNCA I Miura - I - (260)</label>
+    <type>FUND</type>
+    <nav>105.94</nav>
+    <sharpe>0.01709081257</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="941">
+    <label>DNCA Invest Infrastrcuture</label>
+    <type>FUND</type>
+    <nav>77.16</nav>
+    <sharpe>0.128364837724</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="942">
+    <label>DNCA Invest South European Opportunities - A -</label>
+    <type>FUND</type>
+    <nav>49.55</nav>
+    <sharpe>0.100725246413</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="943">
+    <label>DNCA Invest South European Opportunities - I - (260)</label>
+    <type>FUND</type>
+    <nav>50.67</nav>
+    <sharpe>0.102931614369</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="689">
+    <label>eBay</label>
+    <type>STOCK</type>
+    <nav>0</nav>
+    <sharpe>0.004186958633</sharpe>
+    <currency>USD</currency>
+  </asset>
+  <asset id="690">
+    <label>Eca</label>
+    <type>STOCK</type>
+    <nav>13.7</nav>
+    <sharpe>-0.01041613671</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="944">
+    <label>Echiquier Agenor</label>
+    <type>FUND</type>
+    <nav>148.93</nav>
+    <sharpe>0.286177308929</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="945">
+    <label>Echiquier Agressor</label>
+    <type>FUND</type>
+    <nav>1047.12</nav>
+    <sharpe>0.140207572891</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="946">
+    <label>Echiquier Global 3D</label>
+    <type>FUND</type>
+    <nav>108.81</nav>
+    <sharpe>0.228774609243</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="691">
+    <label>Edenred</label>
+    <type>STOCK</type>
+    <nav>19.6</nav>
+    <sharpe>0.064386331091</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="692">
+    <label>EDF</label>
+    <type>STOCK</type>
+    <nav>19.24</nav>
+    <sharpe>-0.057646824793</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="947">
+    <label>Edmond de Rothschild Europe Midcaps - A -</label>
+    <type>FUND</type>
+    <nav>217.86</nav>
+    <sharpe>0.140653577285</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="948">
+    <label>Edmond de Rothschild Flexible - A -</label>
+    <type>FUND</type>
+    <nav>119.74</nav>
+    <sharpe>0.029431968175</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="1020">
+    <label>Edmond de Rothschild Patrimoine - A -</label>
+    <type>FUND</type>
+    <nav>176.16</nav>
+    <sharpe>0.077767357638</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="949">
+    <label>Edmond de Rothschild Tricolore Rendement - C -</label>
+    <type>FUND</type>
+    <nav>203.42</nav>
+    <sharpe>0.11637761538</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="950">
+    <label>Edmond de Rothschild Tricoore Rendement  - D -</label>
+    <type>FUND</type>
+    <nav>156.95</nav>
+    <sharpe>0.064695187567</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="693">
+    <label>Eiffage</label>
+    <type>STOCK</type>
+    <nav>19.46</nav>
+    <sharpe>0.222246908532</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="694">
+    <label>Elekta -B- Fr</label>
+    <type>STOCK</type>
+    <nav>301</nav>
+    <sharpe>-0.102561695269</sharpe>
+    <currency>SEK</currency>
+  </asset>
+  <asset id="695">
+    <label>Enel</label>
+    <type>STOCK</type>
+    <nav>3.226</nav>
+    <sharpe>0.024922006296</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="696">
+    <label>Engie</label>
+    <type>STOCK</type>
+    <nav>21.79</nav>
+    <sharpe>-0.118069944203</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="697">
+    <label>Entercom Communic-A</label>
+    <type>STOCK</type>
+    <nav>0</nav>
+    <sharpe>0.025992520389</sharpe>
+    <currency>USD</currency>
+  </asset>
+  <asset id="698">
+    <label>Environnement</label>
+    <type>STOCK</type>
+    <nav>17.96</nav>
+    <sharpe>0.23247342925</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="1029">
+    <label>epita_ptf_2</label>
+    <type>PORTFOLIO</type>
+    <nav>100</nav>
+    <sharpe>0.202142137858</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="699">
+    <label>Eramet</label>
+    <type>STOCK</type>
+    <nav>99.91</nav>
+    <sharpe>-0.036195239521</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="700">
+    <label>Esi group</label>
+    <type>STOCK</type>
+    <nav>13.39</nav>
+    <sharpe>0.156988766915</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="701">
+    <label>Essilor International</label>
+    <type>STOCK</type>
+    <nav>55.16</nav>
+    <sharpe>0.135869263719</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="702">
+    <label>Esso</label>
+    <type>STOCK</type>
+    <nav>68</nav>
+    <sharpe>-0.091471131246</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="704">
+    <label>Eurazeo</label>
+    <type>STOCK</type>
+    <nav>27.96</nav>
+    <sharpe>0.117819513246</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="705">
+    <label>Eurofins Scientific</label>
+    <type>STOCK</type>
+    <nav>57.5</nav>
+    <sharpe>0.315698051007</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="951">
+    <label>Eurose - C -</label>
+    <type>FUND</type>
+    <nav>274.43</nav>
+    <sharpe>0.177868953073</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="706">
+    <label>Eutelsat Communications</label>
+    <type>STOCK</type>
+    <nav>30.51</nav>
+    <sharpe>-0.080621429184</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="707">
+    <label>Evolis</label>
+    <type>STOCK</type>
+    <nav>12.4</nav>
+    <sharpe>0.114838491154</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="952">
+    <label>Exane Pleiade Fund - P -</label>
+    <type>FUND</type>
+    <nav>127.27</nav>
+    <sharpe>-0.068004405541</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="953">
+    <label>Exane Pleiade Performance - P - (XPAR) (260)</label>
+    <type>FUND</type>
+    <nav>124.48</nav>
+    <sharpe>0.0372752829</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="708">
+    <label>Exel Industries</label>
+    <type>STOCK</type>
+    <nav>32.2</nav>
+    <sharpe>0.177769140645</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="709">
+    <label>Ferragamo</label>
+    <type>STOCK</type>
+    <nav>10.51</nav>
+    <sharpe>0.075164383679</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="710">
+    <label>FFP</label>
+    <type>STOCK</type>
+    <nav>30.7</nav>
+    <sharpe>0.134977787104</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="711">
+    <label>Fidelity America - A -</label>
+    <type>FUND</type>
+    <nav>3.771</nav>
+    <sharpe>0.111396462019</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="712">
+    <label>Fidelity American Growth - AD -</label>
+    <type>FUND</type>
+    <nav>22.93</nav>
+    <sharpe>0.244042149694</sharpe>
+    <currency>USD</currency>
+  </asset>
+  <asset id="714">
+    <label>Fidelity France Fund -AD-</label>
+    <type>FUND</type>
+    <nav>30.77</nav>
+    <sharpe>0.099096164135</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="715">
+    <label>Fidelity Selection Internationale - AD -</label>
+    <type>FUND</type>
+    <nav>31.35</nav>
+    <sharpe>0.185340603017</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="954">
+    <label>First Eagle Amundi International Fund - AU -</label>
+    <type>FUND</type>
+    <nav>4722.5</nav>
+    <sharpe>0.144215343178</sharpe>
+    <currency>USD</currency>
+  </asset>
+  <asset id="716">
+    <label>Fonc.Des Regions</label>
+    <type>STOCK</type>
+    <nav>50.26</nav>
+    <sharpe>0.096459204446</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="717">
+    <label>Fountaine Pajot</label>
+    <type>STOCK</type>
+    <nav>6.1</nav>
+    <sharpe>0.390235648301</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="955">
+    <label>Fourpoints  America - R -</label>
+    <type>FUND</type>
+    <nav>131.6</nav>
+    <sharpe>0.102758573789</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="956">
+    <label>Franklin Templeton Asian Growth - AC -</label>
+    <type>FUND</type>
+    <nav>23.4</nav>
+    <sharpe>0.040899941445</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="957">
+    <label>Franklin Templeton Investment Fund - Franklin Mutual European Fund - A -</label>
+    <type>FUND</type>
+    <nav>15.7</nav>
+    <sharpe>0.084272377907</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="718">
+    <label>Fraport</label>
+    <type>STOCK</type>
+    <nav>38.41</nav>
+    <sharpe>0.118820256326</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="719">
+    <label>Frey</label>
+    <type>STOCK</type>
+    <nav>13.99</nav>
+    <sharpe>0.113250545159</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="958">
+    <label>GaveKal Asian Opps UCITS  - A  - (3230)</label>
+    <type>FUND</type>
+    <nav>0</nav>
+    <sharpe>0.043730126443</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="720">
+    <label>Geberit N</label>
+    <type>STOCK</type>
+    <nav>0</nav>
+    <sharpe>0.182653077167</sharpe>
+    <currency>CHF</currency>
+  </asset>
+  <asset id="721">
+    <label>Gecina Reit</label>
+    <type>STOCK</type>
+    <nav>65.86</nav>
+    <sharpe>0.127830434939</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="722">
+    <label>Gemalto</label>
+    <type>STOCK</type>
+    <nav>37.705</nav>
+    <sharpe>0.021010707008</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="724">
+    <label>General Motors</label>
+    <type>STOCK</type>
+    <nav>0</nav>
+    <sharpe>0.067485577636</sharpe>
+    <currency>USD</currency>
+  </asset>
+  <asset id="725">
+    <label>Generix Rgpt</label>
+    <type>STOCK</type>
+    <nav>0.64</nav>
+    <sharpe>0.176725861897</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="726">
+    <label>Genfit</label>
+    <type>STOCK</type>
+    <nav>1.72</nav>
+    <sharpe>0.150583991165</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="1021">
+    <label>GF Europe</label>
+    <type>FUND</type>
+    <nav>207.6</nav>
+    <sharpe>0.129992047497</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="727">
+    <label>Gl Events</label>
+    <type>STOCK</type>
+    <nav>13.67</nav>
+    <sharpe>0.076223078716</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="728">
+    <label>Goldman Sachs Group</label>
+    <type>STOCK</type>
+    <nav>0</nav>
+    <sharpe>0.147782507985</sharpe>
+    <currency>USD</currency>
+  </asset>
+  <asset id="729">
+    <label>Groupe Eurotunnel Regroupement</label>
+    <type>STOCK</type>
+    <nav>5.435</nav>
+    <sharpe>0.098014794028</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="731">
+    <label>Guerbet</label>
+    <type>STOCK</type>
+    <nav>64.1</nav>
+    <sharpe>-0.023297442641</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="959">
+    <label>H20 Adagio - R -</label>
+    <type>FUND</type>
+    <nav>97.42</nav>
+    <sharpe>0.212211533268</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="960">
+    <label>H20 Multibonds - R -</label>
+    <type>FUND</type>
+    <nav>89.74</nav>
+    <sharpe>0.289910128896</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="961">
+    <label>H2O Allegro - R -</label>
+    <type>FUND</type>
+    <nav>8379.78</nav>
+    <sharpe>0.181917541998</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="732">
+    <label>Harvest</label>
+    <type>STOCK</type>
+    <nav>21</nav>
+    <sharpe>0.191488708964</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="733">
+    <label>HeidelbergCement</label>
+    <type>STOCK</type>
+    <nav>33.73</nav>
+    <sharpe>0.094450943704</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="734">
+    <label>Heineken</label>
+    <type>STOCK</type>
+    <nav>36.7</nav>
+    <sharpe>0.160941823213</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="736">
+    <label>Hermes Intl</label>
+    <type>STOCK</type>
+    <nav>231.3</nav>
+    <sharpe>0.159088525967</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="962">
+    <label>HMG Globetrotter-C-</label>
+    <type>FUND</type>
+    <nav>164.12</nav>
+    <sharpe>0.016273350205</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="738">
+    <label>HSBC GI Indi Eq AC</label>
+    <type>FUND</type>
+    <nav>107.418</nav>
+    <sharpe>0.088734200087</sharpe>
+    <currency>USD</currency>
+  </asset>
+  <asset id="740">
+    <label>Hyatt Hotels-A</label>
+    <type>STOCK</type>
+    <nav>0</nav>
+    <sharpe>0.12373555578</sharpe>
+    <currency>USD</currency>
+  </asset>
+  <asset id="741">
+    <label>Iberdrola SA</label>
+    <type>STOCK</type>
+    <nav>4.963</nav>
+    <sharpe>0.025966477996</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="742">
+    <label>Icade</label>
+    <type>STOCK</type>
+    <nav>59.93</nav>
+    <sharpe>0.025066577026</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="743">
+    <label>IGE Plus XAO</label>
+    <type>STOCK</type>
+    <nav>24.46</nav>
+    <sharpe>0.374998519895</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="744">
+    <label>Iliad</label>
+    <type>STOCK</type>
+    <nav>95.77</nav>
+    <sharpe>0.004578064575</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="745">
+    <label>Imerys</label>
+    <type>STOCK</type>
+    <nav>36.04</nav>
+    <sharpe>0.075785978863</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="746">
+    <label>Infotel</label>
+    <type>STOCK</type>
+    <nav>55.49</nav>
+    <sharpe>-0.025956124691</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="747">
+    <label>Ingenico Group</label>
+    <type>STOCK</type>
+    <nav>28.19</nav>
+    <sharpe>0.090762719398</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="748">
+    <label>Innate Pharma</label>
+    <type>STOCK</type>
+    <nav>1.37</nav>
+    <sharpe>0.083892663938</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="749">
+    <label>International Business Machines Cor</label>
+    <type>STOCK</type>
+    <nav>0</nav>
+    <sharpe>-0.084032610246</sharpe>
+    <currency>USD</currency>
+  </asset>
+  <asset id="750">
+    <label>Interparfums</label>
+    <type>STOCK</type>
+    <nav>16.38</nav>
+    <sharpe>0.108743843372</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="751">
+    <label>Intesa Sanpaolo</label>
+    <type>STOCK</type>
+    <nav>1.33</nav>
+    <sharpe>0.039132160491</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="752">
+    <label>Invesco Pan European Structured Equity - E -</label>
+    <type>FUND</type>
+    <nav>8.46</nav>
+    <sharpe>0.115686919631</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="753">
+    <label>IPSEN</label>
+    <type>STOCK</type>
+    <nav>24.72</nav>
+    <sharpe>0.302972236722</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="754">
+    <label>JACQUET METAL</label>
+    <type>STOCK</type>
+    <nav>8.2</nav>
+    <sharpe>0.135991725035</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="755">
+    <label>JC Decaux</label>
+    <type>STOCK</type>
+    <nav>18.14</nav>
+    <sharpe>0.05380772855</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="756">
+    <label>Jeronimo Martins</label>
+    <type>STOCK</type>
+    <nav>13.025</nav>
+    <sharpe>-0.03821406386</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="759">
+    <label>Kaufman &amp; Broad</label>
+    <type>STOCK</type>
+    <nav>14.1</nav>
+    <sharpe>0.180018447647</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="760">
+    <label>Kerry Group -A-</label>
+    <type>STOCK</type>
+    <nav>0</nav>
+    <sharpe>0.256384257988</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="761">
+    <label>Kone -B-</label>
+    <type>STOCK</type>
+    <nav>40.41</nav>
+    <sharpe>0.002900453392</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="762">
+    <label>Koninklijke Boskalis Westminster Nv</label>
+    <type>STOCK</type>
+    <nav>28.92</nav>
+    <sharpe>-0.046746529803</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="763">
+    <label>Korian</label>
+    <type>STOCK</type>
+    <nav>13.18</nav>
+    <sharpe>0.110541133</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="764">
+    <label>Krones</label>
+    <type>STOCK</type>
+    <nav>37.86</nav>
+    <sharpe>0.155347769003</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="765">
+    <label>L'Oreal</label>
+    <type>STOCK</type>
+    <nav>81.8</nav>
+    <sharpe>0.17489439553</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="766">
+    <label>LafargeHolcim</label>
+    <type>STOCK</type>
+    <nav>0</nav>
+    <sharpe>-0.029354728075</sharpe>
+    <currency>CHF</currency>
+  </asset>
+  <asset id="767">
+    <label>Lagardere SCA N</label>
+    <type>STOCK</type>
+    <nav>21.045</nav>
+    <sharpe>0.01011771183</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="768">
+    <label>Laurent Perrier</label>
+    <type>STOCK</type>
+    <nav>73.99</nav>
+    <sharpe>0.06692103742</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="769">
+    <label>LDLC.com</label>
+    <type>STOCK</type>
+    <nav>6.52</nav>
+    <sharpe>0.097489925346</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="770">
+    <label>Lectra</label>
+    <type>STOCK</type>
+    <nav>4.6</nav>
+    <sharpe>0.212306444538</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="771">
+    <label>Legrand</label>
+    <type>STOCK</type>
+    <nav>25.16</nav>
+    <sharpe>0.170040514482</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="772">
+    <label>Le Noble Age</label>
+    <type>STOCK</type>
+    <nav>12.46</nav>
+    <sharpe>0.26529777632</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="773">
+    <label>Lenovo Sp ADR</label>
+    <type>STOCK</type>
+    <nav>0</nav>
+    <sharpe>-0.02590076648</sharpe>
+    <currency>USD</currency>
+  </asset>
+  <asset id="963">
+    <label>Lutetia Patrimoine -P-</label>
+    <type>FUND</type>
+    <nav>0</nav>
+    <sharpe>-0.083895219339</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="964">
+    <label>Lux Se Act Sol CC (260)</label>
+    <type>FUND</type>
+    <nav>18.15</nav>
+    <sharpe>0.0058289817</sharpe>
+    <currency>USD</currency>
+  </asset>
+  <asset id="774">
+    <label>Lvmh</label>
+    <type>STOCK</type>
+    <nav>111.35</nav>
+    <sharpe>0.155970814689</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="775">
+    <label>M&amp;G Global Dividend - A -</label>
+    <type>FUND</type>
+    <nav>13.466</nav>
+    <sharpe>0.132737961961</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="776">
+    <label>M&amp;G Optimal Income Fd - A-H - Hedged</label>
+    <type>FUND</type>
+    <nav>14.587</nav>
+    <sharpe>0.153014531932</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="965">
+    <label>Magellan C 4D</label>
+    <type>FUND</type>
+    <nav>1474.79</nav>
+    <sharpe>-0.396960558564</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="777">
+    <label>Maisons France Confort</label>
+    <type>STOCK</type>
+    <nav>19.34</nav>
+    <sharpe>0.147434546025</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="966">
+    <label>Mandarine Opportunites - R -</label>
+    <type>FUND</type>
+    <nav>559.5</nav>
+    <sharpe>0.19107664243</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="967">
+    <label>Mandarine Valeur   - R -</label>
+    <type>FUND</type>
+    <nav>319.04</nav>
+    <sharpe>0.073477981173</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="778">
+    <label>Manitou</label>
+    <type>STOCK</type>
+    <nav>12.5</nav>
+    <sharpe>0.105681308078</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="779">
+    <label>Manpower</label>
+    <type>STOCK</type>
+    <nav>0</nav>
+    <sharpe>0.121831482818</sharpe>
+    <currency>USD</currency>
+  </asset>
+  <asset id="780">
+    <label>Manutan International</label>
+    <type>STOCK</type>
+    <nav>35.3</nav>
+    <sharpe>0.121649425771</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="781">
+    <label>Marine Harvest</label>
+    <type>STOCK</type>
+    <nav>2.612</nav>
+    <sharpe>0.052989143048</sharpe>
+    <currency>NOK</currency>
+  </asset>
+  <asset id="782">
+    <label>Mauna Kea Technologies - O -</label>
+    <type>STOCK</type>
+    <nav>10.68</nav>
+    <sharpe>-0.084627382572</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="783">
+    <label>Maurel &amp; Prom.</label>
+    <type>STOCK</type>
+    <nav>11.835</nav>
+    <sharpe>-0.092361947341</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="784">
+    <label>McDonald's</label>
+    <type>STOCK</type>
+    <nav>0</nav>
+    <sharpe>0.113905999875</sharpe>
+    <currency>USD</currency>
+  </asset>
+  <asset id="785">
+    <label>Mercialys</label>
+    <type>STOCK</type>
+    <nav>25.2</nav>
+    <sharpe>-0.109170628963</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="786">
+    <label>Mersen (Excarbonl)</label>
+    <type>STOCK</type>
+    <nav>22.81</nav>
+    <sharpe>0.010369166473</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="787">
+    <label>Metropole TV - M6</label>
+    <type>STOCK</type>
+    <nav>11.8</nav>
+    <sharpe>0.044284503152</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="788">
+    <label>MGI Coutier</label>
+    <type>STOCK</type>
+    <nav>34.3</nav>
+    <sharpe>-0.011972430229</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="789">
+    <label>Michael Page Int</label>
+    <type>STOCK</type>
+    <nav>0</nav>
+    <sharpe>0.052983959936</sharpe>
+    <currency>GBP</currency>
+  </asset>
+  <asset id="790">
+    <label>Michelin Nom.</label>
+    <type>STOCK</type>
+    <nav>46.41</nav>
+    <sharpe>0.119087391757</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="791">
+    <label>MICROPOLE</label>
+    <type>STOCK</type>
+    <nav>1.15</nav>
+    <sharpe>0.004213508839</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="968">
+    <label>Moneta Lg Short A</label>
+    <type>FUND</type>
+    <nav>117.39</nav>
+    <sharpe>0.151695104883</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="969">
+    <label>Moneta Long Short  - R -</label>
+    <type>FUND</type>
+    <nav>98.48</nav>
+    <sharpe>0.145519741722</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="970">
+    <label>Moneta Multi Caps - C - (XPAR) (260)</label>
+    <type>FUND</type>
+    <nav>106.76</nav>
+    <sharpe>0.241642324816</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="792">
+    <label>Morgan Stanley Investment Funds - Euro Corporate Bond Fund  - A -</label>
+    <type>FUND</type>
+    <nav>35.19</nav>
+    <sharpe>0.275294289401</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="971">
+    <label>Muzinich Short Duration High Yield Fund Hedged EUR Accumulation R Units</label>
+    <type>FUND</type>
+    <nav>0</nav>
+    <sharpe>0.044611929372</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="793">
+    <label>NATIXIS</label>
+    <type>STOCK</type>
+    <nav>1.986</nav>
+    <sharpe>0.115821140514</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="972">
+    <label>Natixis Actions US Value (260)</label>
+    <type>FUND</type>
+    <nav>119796.28</nav>
+    <sharpe>0.095613718634</sharpe>
+    <currency>USD</currency>
+  </asset>
+  <asset id="794">
+    <label>Naturex</label>
+    <type>STOCK</type>
+    <nav>50.7</nav>
+    <sharpe>0.112766945358</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="795">
+    <label>Neopost</label>
+    <type>STOCK</type>
+    <nav>53.08</nav>
+    <sharpe>-0.12183384679</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="796">
+    <label>Nestle</label>
+    <type>STOCK</type>
+    <nav>0</nav>
+    <sharpe>0.075620023746</sharpe>
+    <currency>CHF</currency>
+  </asset>
+  <asset id="797">
+    <label>Netflix</label>
+    <type>STOCK</type>
+    <nav>0</nav>
+    <sharpe>0.113028027196</sharpe>
+    <currency>USD</currency>
+  </asset>
+  <asset id="798">
+    <label>Neurones</label>
+    <type>STOCK</type>
+    <nav>7.25</nav>
+    <sharpe>0.244728773503</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="799">
+    <label>Nexans</label>
+    <type>STOCK</type>
+    <nav>42.88</nav>
+    <sharpe>-0.070868381445</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="800">
+    <label>Nexity -A-</label>
+    <type>STOCK</type>
+    <nav>17.6</nav>
+    <sharpe>0.158611004616</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="801">
+    <label>Nike -B-</label>
+    <type>STOCK</type>
+    <nav>0</nav>
+    <sharpe>-0.031162718033</sharpe>
+    <currency>USD</currency>
+  </asset>
+  <asset id="802">
+    <label>Nokia</label>
+    <type>STOCK</type>
+    <nav>3.904</nav>
+    <sharpe>0.0088503117</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="973">
+    <label>Norden</label>
+    <type>FUND</type>
+    <nav>109.93</nav>
+    <sharpe>0.132264773536</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="803">
+    <label>Novartis</label>
+    <type>STOCK</type>
+    <nav>0</nav>
+    <sharpe>0.086241215986</sharpe>
+    <currency>CHF</currency>
+  </asset>
+  <asset id="804">
+    <label>NRJ Group</label>
+    <type>STOCK</type>
+    <nav>6.73</nav>
+    <sharpe>0.031244650225</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="805">
+    <label>Nucor</label>
+    <type>STOCK</type>
+    <nav>0</nav>
+    <sharpe>0.057286045438</sharpe>
+    <currency>USD</currency>
+  </asset>
+  <asset id="806">
+    <label>Nvidia</label>
+    <type>STOCK</type>
+    <nav>0</nav>
+    <sharpe>0.351800380773</sharpe>
+    <currency>USD</currency>
+  </asset>
+  <asset id="974">
+    <label>Objectif Small Caps France - A -</label>
+    <type>FUND</type>
+    <nav>724.87</nav>
+    <sharpe>0.274840787352</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="975">
+    <label>OCEA Actions Rendement Euro - D -</label>
+    <type>FUND</type>
+    <nav>643.58</nav>
+    <sharpe>0.074396527291</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="976">
+    <label>Octo Credit Convictions  - A - (260)</label>
+    <type>FUND</type>
+    <nav>0</nav>
+    <sharpe>0.040934132599</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="977">
+    <label>Oddo Avenir  - DR -</label>
+    <type>FUND</type>
+    <nav>1461.64</nav>
+    <sharpe>0.183709800705</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="978">
+    <label>Oddo Avenir Euro - CR -</label>
+    <type>FUND</type>
+    <nav>125.12</nav>
+    <sharpe>0.198623105146</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="979">
+    <label>Oddo Immobilier - A -</label>
+    <type>FUND</type>
+    <nav>823.31</nav>
+    <sharpe>0.162637811794</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="807">
+    <label>Oeneo</label>
+    <type>STOCK</type>
+    <nav>1.96</nav>
+    <sharpe>0.274574058398</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="808">
+    <label>OL Groupe</label>
+    <type>STOCK</type>
+    <nav>3.41</nav>
+    <sharpe>-0.030730459373</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="809">
+    <label>Onxeo</label>
+    <type>STOCK</type>
+    <nav>3.3</nav>
+    <sharpe>-0.083832227869</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="810">
+    <label>Orange (France Telecom)</label>
+    <type>STOCK</type>
+    <nav>12.355</nav>
+    <sharpe>0.000340353493</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="811">
+    <label>ORANGE BELGIUM</label>
+    <type>STOCK</type>
+    <nav>40.98</nav>
+    <sharpe>-0.158703642208</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="812">
+    <label>Orege</label>
+    <type>STOCK</type>
+    <nav>1.44</nav>
+    <sharpe>0.072433286443</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="813">
+    <label>Orpea</label>
+    <type>STOCK</type>
+    <nav>25.92</nav>
+    <sharpe>0.318956125064</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="981">
+    <label>Oyster European Opportunities</label>
+    <type>FUND</type>
+    <nav>259.62</nav>
+    <sharpe>0.120079810109</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="814">
+    <label>Panasonic  (JPY)</label>
+    <type>STOCK</type>
+    <nav>0</nav>
+    <sharpe>0.056076947592</sharpe>
+    <currency>JPY</currency>
+  </asset>
+  <asset id="815">
+    <label>Pandora</label>
+    <type>STOCK</type>
+    <nav>59.4</nav>
+    <sharpe>0.192604360898</sharpe>
+    <currency>DKK</currency>
+  </asset>
+  <asset id="816">
+    <label>Parmalat</label>
+    <type>STOCK</type>
+    <nav>1.362</nav>
+    <sharpe>0.144818720169</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="817">
+    <label>Parrot</label>
+    <type>STOCK</type>
+    <nav>17.4</nav>
+    <sharpe>-0.133001857197</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="818">
+    <label>Patrimoine et Commerce Regroupement</label>
+    <type>STOCK</type>
+    <nav>14.5</nav>
+    <sharpe>0.042107127943</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="819">
+    <label>Pernod Ricard</label>
+    <type>STOCK</type>
+    <nav>72.47</nav>
+    <sharpe>0.116859308797</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="982">
+    <label>Petercam Equities Euroland  - B -</label>
+    <type>FUND</type>
+    <nav>93.52</nav>
+    <sharpe>0.163075945963</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="983">
+    <label>Petercam Equities Europe Sustainable</label>
+    <type>FUND</type>
+    <nav>149.05</nav>
+    <sharpe>0.131937106683</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="820">
+    <label>Peugeot</label>
+    <type>STOCK</type>
+    <nav>12.615</nav>
+    <sharpe>0.052565905723</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="821">
+    <label>Philips Koninklijke</label>
+    <type>STOCK</type>
+    <nav>16.49</nav>
+    <sharpe>0.138474621481</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="984">
+    <label>Pictet - Biotech - P - USD (260)</label>
+    <type>FUND</type>
+    <nav>0</nav>
+    <sharpe>0.078682238149</sharpe>
+    <currency>USD</currency>
+  </asset>
+  <asset id="985">
+    <label>Pictet Digital Communication - P -</label>
+    <type>FUND</type>
+    <nav>0</nav>
+    <sharpe>0.065334006052</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="986">
+    <label>Pictet - Global Megatrend Selection - P - EUR (3230)</label>
+    <type>FUND</type>
+    <nav>0</nav>
+    <sharpe>0.059049647707</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="987">
+    <label>Pictet - Premium Brands - P - EUR</label>
+    <type>FUND</type>
+    <nav>0</nav>
+    <sharpe>0.123197378054</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="988">
+    <label>Pictet - Security - P - EUR</label>
+    <type>FUND</type>
+    <nav>0</nav>
+    <sharpe>0.178247338745</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="989">
+    <label>Pictet Timber - P -</label>
+    <type>FUND</type>
+    <nav>0</nav>
+    <sharpe>0.167190842581</sharpe>
+    <currency>USD</currency>
+  </asset>
+  <asset id="990">
+    <label>Pictet - Water - P - EUR</label>
+    <type>FUND</type>
+    <nav>0</nav>
+    <sharpe>0.17678272696</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="991">
+    <label>Pictet - Water - P- USD (260)</label>
+    <type>FUND</type>
+    <nav>0</nav>
+    <sharpe>0.075914210122</sharpe>
+    <currency>USD</currency>
+  </asset>
+  <asset id="822">
+    <label>Plastic Omnium</label>
+    <type>STOCK</type>
+    <nav>15.82</nav>
+    <sharpe>0.066909418519</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="992">
+    <label>Pluvalca Allcaps - A -</label>
+    <type>FUND</type>
+    <nav>194.39</nav>
+    <sharpe>0.185328885649</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="993">
+    <label>Pluvalca France Small Caps - A -</label>
+    <type>FUND</type>
+    <nav>258.76</nav>
+    <sharpe>0.314235606196</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="994">
+    <label>Polar Capital North American Fund USD - I - (XDUB) (3231)</label>
+    <type>FUND</type>
+    <nav>0</nav>
+    <sharpe>0.257190668061</sharpe>
+    <currency>USD</currency>
+  </asset>
+  <asset id="995">
+    <label>Portzamparc PME</label>
+    <type>FUND</type>
+    <nav>138.02</nav>
+    <sharpe>0.233556397849</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="823">
+    <label>PPG Industries</label>
+    <type>STOCK</type>
+    <nav>0</nav>
+    <sharpe>0.018556469452</sharpe>
+    <currency>USD</currency>
+  </asset>
+  <asset id="824">
+    <label>PPR (Kering)</label>
+    <type>STOCK</type>
+    <nav>112.25</nav>
+    <sharpe>0.217602572893</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="825">
+    <label>Prada S.P.A.</label>
+    <type>STOCK</type>
+    <nav>3.483</nav>
+    <sharpe>-0.002441959307</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="826">
+    <label>Precia</label>
+    <type>STOCK</type>
+    <nav>54</nav>
+    <sharpe>0.215016280624</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="996">
+    <label>Prevoir Gestion Actions - C -</label>
+    <type>FUND</type>
+    <nav>133.8</nav>
+    <sharpe>0.177600407265</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="827">
+    <label>Prodware</label>
+    <type>STOCK</type>
+    <nav>7</nav>
+    <sharpe>0.059651714811</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="829">
+    <label>PSB Industries</label>
+    <type>STOCK</type>
+    <nav>20.26</nav>
+    <sharpe>0.177165163574</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="830">
+    <label>Publicis Groupe</label>
+    <type>STOCK</type>
+    <nav>36.22</nav>
+    <sharpe>0.057884980793</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="831">
+    <label>PVH</label>
+    <type>STOCK</type>
+    <nav>0</nav>
+    <sharpe>0.091956669126</sharpe>
+    <currency>USD</currency>
+  </asset>
+  <asset id="997">
+    <label>R Club - F -</label>
+    <type>FUND</type>
+    <nav>86.74</nav>
+    <sharpe>0.092130224378</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="832">
+    <label>Red Hat</label>
+    <type>STOCK</type>
+    <nav>0</nav>
+    <sharpe>0.140542554538</sharpe>
+    <currency>USD</currency>
+  </asset>
+  <asset id="998">
+    <label>Renaissance.Europe - C -</label>
+    <type>FUND</type>
+    <nav>71.82</nav>
+    <sharpe>0.17359679956</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="833">
+    <label>Renault</label>
+    <type>STOCK</type>
+    <nav>27.595</nav>
+    <sharpe>0.11528546008</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="834">
+    <label>Rexel</label>
+    <type>STOCK</type>
+    <nav>13.44</nav>
+    <sharpe>-0.016521222057</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="835">
+    <label>Roche Holding</label>
+    <type>STOCK</type>
+    <nav>0</nav>
+    <sharpe>0.080006710796</sharpe>
+    <currency>CHF</currency>
+  </asset>
+  <asset id="836">
+    <label>Rockwool International -B-</label>
+    <type>STOCK</type>
+    <nav>473</nav>
+    <sharpe>0.274770227541</sharpe>
+    <currency>DKK</currency>
+  </asset>
+  <asset id="837">
+    <label>Rothschild &amp; Co</label>
+    <type>STOCK</type>
+    <nav>14.6</nav>
+    <sharpe>0.154275855529</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="999">
+    <label>Rouvier Patrimoine Reg S - C -</label>
+    <type>FUND</type>
+    <nav>45.72</nav>
+    <sharpe>0.168785934035</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="838">
+    <label>Royal Dutch Shell classe A</label>
+    <type>STOCK</type>
+    <nav>28.27</nav>
+    <sharpe>-0.02514960543</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="839">
+    <label>SAFRAN</label>
+    <type>STOCK</type>
+    <nav>23.5</nav>
+    <sharpe>0.274709356613</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="840">
+    <label>Saint Gobain</label>
+    <type>STOCK</type>
+    <nav>30.245</nav>
+    <sharpe>0.013288470295</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="841">
+    <label>Salesforce.Com</label>
+    <type>STOCK</type>
+    <nav>0</nav>
+    <sharpe>0.013465375283</sharpe>
+    <currency>USD</currency>
+  </asset>
+  <asset id="842">
+    <label>Sanofi</label>
+    <type>STOCK</type>
+    <nav>57.42</nav>
+    <sharpe>0.025143404233</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="843">
+    <label>SAP</label>
+    <type>STOCK</type>
+    <nav>41.655</nav>
+    <sharpe>0.172484260983</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="845">
+    <label>Schlumberger</label>
+    <type>STOCK</type>
+    <nav>53.87</nav>
+    <sharpe>-0.016114539428</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="846">
+    <label>Schneider Electric</label>
+    <type>STOCK</type>
+    <nav>41.56</nav>
+    <sharpe>0.065025015099</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="847">
+    <label>Scor</label>
+    <type>STOCK</type>
+    <nav>17.98</nav>
+    <sharpe>0.103764629714</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="848">
+    <label>Seb</label>
+    <type>STOCK</type>
+    <nav>59.53</nav>
+    <sharpe>0.153453807785</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="849">
+    <label>Seche Environnement</label>
+    <type>STOCK</type>
+    <nav>29.2</nav>
+    <sharpe>-0.030450113439</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="1000">
+    <label>Sextant Grand Large - A -</label>
+    <type>FUND</type>
+    <nav>221.42</nav>
+    <sharpe>0.110602684011</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="1001">
+    <label>Sextant PEA  - A -</label>
+    <type>FUND</type>
+    <nav>332.35</nav>
+    <sharpe>0.527969464521</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="1002">
+    <label>Sextant PME A 4D</label>
+    <type>FUND</type>
+    <nav>81.31</nav>
+    <sharpe>0.345077896379</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="850">
+    <label>Sharp Corporation Osaka</label>
+    <type>STOCK</type>
+    <nav>6.6</nav>
+    <sharpe>0.012298175893</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="851">
+    <label>Siemens N</label>
+    <type>STOCK</type>
+    <nav>75.44</nav>
+    <sharpe>0.054165327623</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="853">
+    <label>Siph</label>
+    <type>STOCK</type>
+    <nav>57.77</nav>
+    <sharpe>0.026358906585</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="854">
+    <label>Societe Generale</label>
+    <type>STOCK</type>
+    <nav>17.685</nav>
+    <sharpe>0.067485954088</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="855">
+    <label>Sodastream International</label>
+    <type>STOCK</type>
+    <nav>0</nav>
+    <sharpe>0.13191281531</sharpe>
+    <currency>USD</currency>
+  </asset>
+  <asset id="856">
+    <label>Sodexo</label>
+    <type>STOCK</type>
+    <nav>55.27</nav>
+    <sharpe>0.07897239078</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="857">
+    <label>Solvay</label>
+    <type>STOCK</type>
+    <nav>65.1</nav>
+    <sharpe>0.0751872514</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="858">
+    <label>Sopra Steria Group</label>
+    <type>STOCK</type>
+    <nav>35.8</nav>
+    <sharpe>0.203415056203</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="860">
+    <label>Sqli Regroupement</label>
+    <type>STOCK</type>
+    <nav>0.9</nav>
+    <sharpe>0.043254263442</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="1003">
+    <label>Stamina Patrimoine - R -</label>
+    <type>FUND</type>
+    <nav>118.61</nav>
+    <sharpe>0.103252065816</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="861">
+    <label>Stanley Black And Decker</label>
+    <type>STOCK</type>
+    <nav>0</nav>
+    <sharpe>0.128669658422</sharpe>
+    <currency>USD</currency>
+  </asset>
+  <asset id="862">
+    <label>Stentys</label>
+    <type>STOCK</type>
+    <nav>16.61</nav>
+    <sharpe>-0.214457396142</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="863">
+    <label>Stmicroelectronics</label>
+    <type>STOCK</type>
+    <nav>4.703</nav>
+    <sharpe>0.140351932452</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="864">
+    <label>Store Electronic</label>
+    <type>STOCK</type>
+    <nav>10.05</nav>
+    <sharpe>0.159666754055</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="865">
+    <label>Suez</label>
+    <type>STOCK</type>
+    <nav>9.199</nav>
+    <sharpe>0.02870638092</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="866">
+    <label>Swiss Re</label>
+    <type>STOCK</type>
+    <nav>0</nav>
+    <sharpe>0.104433500241</sharpe>
+    <currency>CHF</currency>
+  </asset>
+  <asset id="867">
+    <label>Sword Group</label>
+    <type>STOCK</type>
+    <nav>12.15</nav>
+    <sharpe>0.168475204169</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="1004">
+    <label>Sycomore L/S Market Neutral - I -  (XPAR) (260)</label>
+    <type>FUND</type>
+    <nav>100.4</nav>
+    <sharpe>-0.053147150402</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="1005">
+    <label>Sycomore L/S Opportunities - A -</label>
+    <type>FUND</type>
+    <nav>238.85</nav>
+    <sharpe>0.192178771879</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="1006">
+    <label>Sycomore L/S Opportunities - R -</label>
+    <type>FUND</type>
+    <nav>232.43</nav>
+    <sharpe>0.1768335367</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="1007">
+    <label>Sycomore Selection Responsable - I - (260)</label>
+    <type>FUND</type>
+    <nav>178.89</nav>
+    <sharpe>0.227206312573</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="868">
+    <label>Symrise</label>
+    <type>STOCK</type>
+    <nav>20.935</nav>
+    <sharpe>0.251245181912</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="1008">
+    <label>Synergy Smaller Cies A</label>
+    <type>FUND</type>
+    <nav>301.13</nav>
+    <sharpe>0.289492378806</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="1009">
+    <label>Synergy Smaller Cies FCP -R-</label>
+    <type>FUND</type>
+    <nav>292.37</nav>
+    <sharpe>0.278105874918</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="1010">
+    <label>Talence Optimal</label>
+    <type>FUND</type>
+    <nav>95.84</nav>
+    <sharpe>0.043948855656</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="869">
+    <label>Taubman Centers Inc</label>
+    <type>STOCK</type>
+    <nav>0</nav>
+    <sharpe>-0.013699088571</sharpe>
+    <currency>USD</currency>
+  </asset>
+  <asset id="870">
+    <label>Technicolor RGPT</label>
+    <type>STOCK</type>
+    <nav>1.311</nav>
+    <sharpe>-0.021080407656</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="871">
+    <label>TE Connectivity</label>
+    <type>STOCK</type>
+    <nav>0</nav>
+    <sharpe>0.19653913479</sharpe>
+    <currency>USD</currency>
+  </asset>
+  <asset id="872">
+    <label>Telecom Italia</label>
+    <type>STOCK</type>
+    <nav>0.849</nav>
+    <sharpe>-0.06433557978</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="873">
+    <label>Teleperformance</label>
+    <type>STOCK</type>
+    <nav>17.53</nav>
+    <sharpe>0.38721750374</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="874">
+    <label>Terreis</label>
+    <type>STOCK</type>
+    <nav>12.97</nav>
+    <sharpe>0.273126414759</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="875">
+    <label>Tesla Motors</label>
+    <type>STOCK</type>
+    <nav>0</nav>
+    <sharpe>0.189635836008</sharpe>
+    <currency>USD</currency>
+  </asset>
+  <asset id="876">
+    <label>TF1</label>
+    <type>STOCK</type>
+    <nav>7.77</nav>
+    <sharpe>-0.003202736249</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="877">
+    <label>Thales</label>
+    <type>STOCK</type>
+    <nav>24.4</nav>
+    <sharpe>0.307500675235</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="878">
+    <label>The Swatch Grp</label>
+    <type>STOCK</type>
+    <nav>0</nav>
+    <sharpe>0.003336177128</sharpe>
+    <currency>CHF</currency>
+  </asset>
+  <asset id="879">
+    <label>Tikkurila</label>
+    <type>STOCK</type>
+    <nav>13.68</nav>
+    <sharpe>-0.006895032221</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="1011">
+    <label>Tocqueville Ulysse - D -</label>
+    <type>FUND</type>
+    <nav>29.04</nav>
+    <sharpe>0.08537527648</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="880">
+    <label>Tod's</label>
+    <type>STOCK</type>
+    <nav>63.4</nav>
+    <sharpe>-0.026564356443</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="881">
+    <label>Total</label>
+    <type>STOCK</type>
+    <nav>40</nav>
+    <sharpe>0.033963676865</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="882">
+    <label>Transgene</label>
+    <type>STOCK</type>
+    <nav>7.65</nav>
+    <sharpe>-0.090887485455</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="883">
+    <label>Trigano</label>
+    <type>STOCK</type>
+    <nav>12.32</nav>
+    <sharpe>0.229334477479</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="1012">
+    <label>UBAM - Neuberger Berman US Equity Value - IC - USD (260)</label>
+    <type>FUND</type>
+    <nav>676.28</nav>
+    <sharpe>0.061765464181</sharpe>
+    <currency>USD</currency>
+  </asset>
+  <asset id="885">
+    <label>UBISOFT ENTERTAIN.</label>
+    <type>STOCK</type>
+    <nav>5.308</nav>
+    <sharpe>0.344201308281</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="1022">
+    <label>UBS (F) - Flex Court Terme - R -</label>
+    <type>FUND</type>
+    <nav>5779.62</nav>
+    <sharpe>-0.446360599634</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="886">
+    <label>UBS (Lux) Equity fund - Asian Consumption (USD)</label>
+    <type>FUND</type>
+    <nav>89.6</nav>
+    <sharpe>0.064648910517</sharpe>
+    <currency>USD</currency>
+  </asset>
+  <asset id="1014">
+    <label>UBS (Lux) Equity SICAV - USA Growth - P -</label>
+    <type>FUND</type>
+    <nav>0</nav>
+    <sharpe>0.136289398089</sharpe>
+    <currency>USD</currency>
+  </asset>
+  <asset id="887">
+    <label>UCAR</label>
+    <type>STOCK</type>
+    <nav>11.4</nav>
+    <sharpe>0.059343909843</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="888">
+    <label>UCB</label>
+    <type>STOCK</type>
+    <nav>32.43</nav>
+    <sharpe>0.136810614089</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="890">
+    <label>Unilever Cert</label>
+    <type>STOCK</type>
+    <nav>27.105</nav>
+    <sharpe>0.103594709915</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="892">
+    <label>Union Cash - C -</label>
+    <type>FUND</type>
+    <nav>502541.68</nav>
+    <sharpe>-13.820012704846</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="1015">
+    <label>Union PEA Securite (260)</label>
+    <type>FUND</type>
+    <nav>10694.93</nav>
+    <sharpe>-25.873653851405</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="1016">
+    <label>UOB Global Paradigm USD -B- (260)</label>
+    <type>FUND</type>
+    <nav>152.06</nav>
+    <sharpe>0.102439662006</sharpe>
+    <currency>USD</currency>
+  </asset>
+  <asset id="894">
+    <label>USG Corp</label>
+    <type>STOCK</type>
+    <nav>0</nav>
+    <sharpe>0.146825847267</sharpe>
+    <currency>USD</currency>
+  </asset>
+  <asset id="895">
+    <label>Vallourec</label>
+    <type>STOCK</type>
+    <nav>51.44</nav>
+    <sharpe>-0.194097640278</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="896">
+    <label>Veolia Environn.</label>
+    <type>STOCK</type>
+    <nav>8.935</nav>
+    <sharpe>0.092703881447</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="897">
+    <label>Vestas Wind Systems</label>
+    <type>STOCK</type>
+    <nav>67.95</nav>
+    <sharpe>0.061289398925</sharpe>
+    <currency>DKK</currency>
+  </asset>
+  <asset id="898">
+    <label>Viacom-B</label>
+    <type>STOCK</type>
+    <nav>0</nav>
+    <sharpe>-0.069344738234</sharpe>
+    <currency>USD</currency>
+  </asset>
+  <asset id="899">
+    <label>Vicat</label>
+    <type>STOCK</type>
+    <nav>45.47</nav>
+    <sharpe>0.002782469605</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="900">
+    <label>Vilmorin Cie</label>
+    <type>STOCK</type>
+    <nav>73.98</nav>
+    <sharpe>-0.051806146225</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="901">
+    <label>Vinci</label>
+    <type>STOCK</type>
+    <nav>34.45</nav>
+    <sharpe>0.146572735529</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="902">
+    <label>Virbac</label>
+    <type>STOCK</type>
+    <nav>119.9</nav>
+    <sharpe>-0.002567681361</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="903">
+    <label>Vivendi</label>
+    <type>STOCK</type>
+    <nav>17.51</nav>
+    <sharpe>0.022015588682</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="904">
+    <label>Volvo</label>
+    <type>STOCK</type>
+    <nav>77.8</nav>
+    <sharpe>0.093838510829</sharpe>
+    <currency>SEK</currency>
+  </asset>
+  <asset id="1017">
+    <label>VP Obl.igations Euro Rendement - D -</label>
+    <type>FUND</type>
+    <nav>480.79</nav>
+    <sharpe>0.012248611103</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="905">
+    <label>Wacker Chemie</label>
+    <type>STOCK</type>
+    <nav>65.85</nav>
+    <sharpe>0.064516112239</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="906">
+    <label>Wavestone</label>
+    <type>STOCK</type>
+    <nav>17.55</nav>
+    <sharpe>0.375932773765</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="907">
+    <label>Wendel</label>
+    <type>STOCK</type>
+    <nav>52.5</nav>
+    <sharpe>0.139841312435</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="908">
+    <label>Whitbread</label>
+    <type>STOCK</type>
+    <nav>0</nav>
+    <sharpe>0.173238625065</sharpe>
+    <currency>GBP</currency>
+  </asset>
+  <asset id="909">
+    <label>Wirecard</label>
+    <type>STOCK</type>
+    <nav>12.78</nav>
+    <sharpe>0.389680105</sharpe>
+    <currency>EUR</currency>
+  </asset>
+  <asset id="911">
+    <label>W R Grace</label>
+    <type>STOCK</type>
+    <nav>0</nav>
+    <sharpe>0.07474836739</sharpe>
+    <currency>USD</currency>
+  </asset>
+  <asset id="912">
+    <label>XPO Logistics</label>
+    <type>STOCK</type>
+    <nav>55.17</nav>
+    <sharpe>0.23083168229</sharpe>
+    <currency>EUR</currency>
+  </asset>
 </dolphin>
