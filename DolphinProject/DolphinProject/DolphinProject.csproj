@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Business\BuildPortfolio.cs" />
     <Compile Include="Business\CheckValidity.cs" />
     <Compile Include="Business\CurrencyConverter.cs" />
     <Compile Include="DataAccess\APIAccess.cs" />

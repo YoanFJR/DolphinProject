@@ -90,5 +90,28 @@ namespace DolphinProject.DataAccess
 
             return assets;
         }
+
+        public List<Asset> GetAssets()
+        {
+            XmlDocument doc = new XmlDocument();
+            doc.Load("AssetDb.xml");
+
+            List<Asset> assets = new List<Asset>();
+
+            foreach (XmlNode assetNode in doc.SelectNodes("//asset"))
+            {
+                assets.Add(new Asset()
+                {
+                    Id = new Value() { value = assetNode.Attributes.GetNamedItem("id").InnerText },
+                    Label = new Value() { value = assetNode.SelectSingleNode("//label").InnerText },
+                    Type = new Value() { value = assetNode.SelectSingleNode("//type").InnerText },
+                    Nav = Convert.ToDouble(assetNode.SelectSingleNode("//nav").InnerText),
+                    Sharpe = Convert.ToDouble(assetNode.SelectSingleNode("//sharpe").InnerText),
+                    Currency = new Value() { value = assetNode.SelectSingleNode("//currency").InnerText }
+            });
+            }
+
+            return assets;
+        }
     }
 }
