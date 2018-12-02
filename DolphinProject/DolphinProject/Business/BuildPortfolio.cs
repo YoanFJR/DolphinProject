@@ -28,7 +28,7 @@ namespace DolphinProject.Business
                 assets.Remove(asset);
             }
             
-            assets = assets.Where(a => a.Nav > 0).OrderByDescending(a => a.Sharpe).Take(50).ToList();
+            assets = assets.Where(a => a.Nav > 0 && a.Type.value == "STOCK").OrderByDescending(a => a.Sharpe).Take(50).ToList();
             //assets.RemoveRange(assets.Count - 50, 50);
             return result;
         }

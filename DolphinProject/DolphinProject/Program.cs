@@ -17,24 +17,27 @@ namespace DolphinProject
         {
             APIAccess api = new APIAccess(BASEURL);
 
-            //Portfolio p = api.GetPortfolio();
-            //p.Actifs.Clear();
-            //p.Actifs.Add(new Actif()
-            //{
-            //    Asset = 814,
-            //    Quantity = 1
-            //});
-            //p.Actifs.Add(new Actif()
-            //{
-            //    Asset = 609,
-            //    Quantity = 1
-            //});
+            Portfolio p = api.GetPortfolio();
+            p.Actifs.Clear();
+            p.Actifs.Add(new Actif()
+            {
+                Asset = 599,
+                Quantity = 1
+            });
+            p.Actifs.Add(new Actif()
+            {
+                Asset = 609,
+                Quantity = 1
+            });
 
-            //api.PutPortfolio(p);
+            CheckValidity checkValidity = new CheckValidity();
+            checkValidity.CheckPortfolioNav(p);
+
+            api.PutPortfolio(p);
 
             BuildPortfolio buildPortfolio = new BuildPortfolio();
 
-            List<Asset> test = buildPortfolio.GetBestSharpe(50);
+            //List<Asset> test = buildPortfolio.GetBestSharpe(50);
 
             Console.Write("Terminated...");
             Console.ReadKey();

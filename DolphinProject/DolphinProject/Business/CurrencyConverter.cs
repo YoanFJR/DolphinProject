@@ -9,7 +9,7 @@ namespace DolphinProject.Business
     public class CurrencyConverter
     {
         //Convert the value related to old currency to new value in EUR.
-        public double value_exchange (string old_curr, double old_val)
+        public static double value_exchange (string old_curr, double old_val)
         {
             double new_val = 0;
 
