@@ -21,11 +21,15 @@ namespace DolphinProject.Model
         [JsonProperty(PropertyName = "CURRENCY")]
         public Value Currency { get; set; }
 
-        [JsonProperty(PropertyName = "nav")]
         public double Nav { get; set; }
 
-        [JsonProperty(PropertyName = "20")]
         public double Sharpe { get; set; }
 
+        public List<Correlation> Correlations { get; set; }
+
+        public Asset()
+        {
+            Correlations = new List<Correlation>();
+        }
     }
 }

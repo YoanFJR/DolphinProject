@@ -12,7 +12,7 @@ namespace DolphinProject.DBDump
         static void Main(string[] args)
         {
             DBScrapper dBScrapper = new DBScrapper();
-            dBScrapper.Scrapp();
+            dBScrapper.ScrappCorrelation();
 
             Console.Write("Program terminated...");
             Console.ReadKey();
