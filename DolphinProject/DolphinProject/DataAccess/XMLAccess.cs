@@ -36,8 +36,8 @@ namespace DolphinProject.DataAccess
             XmlNode node =  doc.SelectSingleNode("//asset[@id=" + id + "]");
             asset.Label = new Value() { value = node.SelectSingleNode("//label").InnerText };
             asset.Type = new Value() { value = node.SelectSingleNode("//type").InnerText };
-            asset.Nav = new Value() { value = node.SelectSingleNode("//nav").InnerText };
-            asset.Sharpe = new Value() { value = node.SelectSingleNode("//sharpe").InnerText };
+            asset.Nav = Convert.ToDouble(node.SelectSingleNode("//nav").InnerText);
+            asset.Sharpe = Convert.ToDouble(node.SelectSingleNode("//sharpe").InnerText);
             asset.Currency = new Value() { value = node.SelectSingleNode("//currency").InnerText };
 
             return asset;
