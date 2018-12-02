@@ -26,6 +26,36 @@ namespace DolphinProject.DataAccess
             doc.Save("AssetDb.xml");
         }
 
+        public void UpdateCorrelation(List<Asset> assets)
+        {
+            XmlDocument doc = new XmlDocument();
+            doc.Load("AssetDb.xml");
+
+            foreach (Asset asset in assets)
+            {
+                XmlElement el = (XmlElement)doc.SelectSingleNode("//asset[@id=" + asset.Id.value + "]");
+                if (el != null)
+                {
+                    XmlElement correlations = doc.CreateElement("correlations");
+
+                    foreach (Correlation cor in asset.Correlations)
+                    {
+                        XmlElement correlation = doc.CreateElement("correlation");
+                        XmlElement dest = doc.CreateElement("dest");
+                        XmlElement value = doc.CreateElement("value");
+                        dest.InnerText = cor.AssetIdDest;
+                        value.InnerText = cor.Value;
+                        correlation.AppendChild(dest);
+                        correlation.AppendChild(value);
+                        correlations.AppendChild(correlation);
+                    }
+                    el.AppendChild(correlations);
+                }
+            }
+            
+            doc.Save("AssetDb.xml");
+        }
+
         public Asset GetAsset(int id)
         {
             XmlDocument doc = new XmlDocument();
