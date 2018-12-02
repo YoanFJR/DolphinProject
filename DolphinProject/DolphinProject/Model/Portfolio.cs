@@ -18,6 +18,10 @@ namespace DolphinProject.Model
         public Portfolio()
         {
             Actifs = new List<Actif>();
+            Label = "epita_ptf_2";
+            Currency = "EUR";
+            Type = "front";
+
         }
 
         public string Serialize()

@@ -57,8 +57,8 @@ namespace DolphinProject.DataAccess
 
         public bool PutPortfolio(Portfolio portfolio)
         {
-            string test = portfolio.Serialize();
-            HttpContent content = new StringContent(portfolio.Serialize(), Encoding.UTF8, "application/json");
+            string p = portfolio.Serialize();
+            HttpContent content = new StringContent(p, Encoding.UTF8, "application/json");
 
             var res = _client.PutAsync("portfolio/" + ID_PORTFOLIO + "/dyn_amount_compo", content).Result;
             return res.IsSuccessStatusCode;
