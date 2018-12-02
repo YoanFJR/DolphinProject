@@ -53,6 +53,7 @@
     <Compile Include="DataAccess\XMLAccess.cs" />
     <Compile Include="Model\Actif.cs" />
     <Compile Include="Model\Asset.cs" />
+    <Compile Include="Model\Correlation.cs" />
     <Compile Include="Model\Portfolio.cs" />
     <Compile Include="Model\Value.cs" />
     <Compile Include="Program.cs" />

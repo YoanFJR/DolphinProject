@@ -36,11 +36,52 @@ namespace DolphinProject.DataAccess
             XmlNode node =  doc.SelectSingleNode("//asset[@id=" + id + "]");
             asset.Label = new Value() { value = node.SelectSingleNode("//label").InnerText };
             asset.Type = new Value() { value = node.SelectSingleNode("//type").InnerText };
-            asset.Nav = new Value() { value = node.SelectSingleNode("//nav").InnerText };
-            asset.Sharpe = new Value() { value = node.SelectSingleNode("//sharpe").InnerText };
+            asset.Nav = Convert.ToDouble(node.SelectSingleNode("//nav").InnerText);
+            asset.Sharpe = Convert.ToDouble(node.SelectSingleNode("//sharpe").InnerText);
             asset.Currency = new Value() { value = node.SelectSingleNode("//currency").InnerText };
 
             return asset;
+        }
+
+        public List<Asset> GetAssetsId()
+        {
+            XmlDocument doc = new XmlDocument();
+            doc.Load("AssetDb.xml");
+
+            List<Asset> assets = new List<Asset>();
+
+            foreach (XmlNode assetNode in doc.SelectNodes("//asset"))
+            {
+                assets.Add(new Asset()
+                {
+                    Id = new Value() { value = assetNode.Attributes.GetNamedItem("id").InnerText }
+                });
+            }
+
+            return assets;
+        }
+
+        public List<Asset> GetAssets()
+        {
+            XmlDocument doc = new XmlDocument();
+            doc.Load("AssetDb.xml");
+
+            List<Asset> assets = new List<Asset>();
+
+            foreach (XmlNode assetNode in doc.SelectNodes("//asset"))
+            {
+                assets.Add(new Asset()
+                {
+                    Id = new Value() { value = assetNode.Attributes.GetNamedItem("id").InnerText },
+                    Label = new Value() { value = assetNode.SelectSingleNode("//label").InnerText },
+                    Type = new Value() { value = assetNode.SelectSingleNode("//type").InnerText },
+                    Nav = Convert.ToDouble(assetNode.SelectSingleNode("//nav").InnerText),
+                    Sharpe = Convert.ToDouble(assetNode.SelectSingleNode("//sharpe").InnerText),
+                    Currency = new Value() { value = assetNode.SelectSingleNode("//currency").InnerText }
+            });
+            }
+
+            return assets;
         }
     }
 }

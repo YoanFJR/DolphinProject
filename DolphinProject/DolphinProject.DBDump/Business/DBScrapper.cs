@@ -162,5 +162,37 @@ namespace DolphinProject.DBDump.Business
             new XMLAccess().AddAssets(result);
             Console.WriteLine("[LOG] Scrapping done");
         }
+
+        public void ScrappCorrelation()
+        {
+            XMLAccess xMLAccess = new XMLAccess();
+            List<Asset> assets = xMLAccess.GetAssetsId();
+
+            foreach (Asset asset in assets)
+            {
+                StringBuilder sbContent = new StringBuilder("{\"ratio\":[19],\"asset\":[");
+                foreach (Asset it in assets)
+                    sbContent.Append(it.Id.value + ",");
+                sbContent.Remove(sbContent.Length - 1, 1);
+                sbContent.Append("],\"benchmark\":\"");
+                sbContent.Append(asset.Id.value);
+                sbContent.Append("\"}");
+                string corr = _api.Post("ratio/invoke", sbContent.ToString());
+
+                var values = Regex.Matches(corr, "\"[0-9]*\":{[ \\-\n\"a-zA-Z:,0-9{]*");
+                List<KeyValuePair<string, string>> correlation = new List<KeyValuePair<string, string>>();
+                foreach (Match value in values)
+                {
+                    string idAsset = value.Value.Substring(1, 4).Replace("\"", "");
+
+                    string val = Regex.Match(value.Value, "\"value\":\"[\\-0-9,]*\"").Value;
+                    val = val.Replace("\"", "").Replace("value:", "");
+
+                    correlation.Add()
+
+                    correlation.Add(new KeyValuePair<string, string>(asset.Id.value, val));
+                }
+            }
+        }
     }
 }
