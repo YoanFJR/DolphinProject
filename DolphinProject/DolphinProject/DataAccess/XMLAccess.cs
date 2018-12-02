@@ -58,28 +58,7 @@ namespace DolphinProject.DataAccess
 
         public Asset GetAsset(int id)
         {
-            XmlDocument doc = new XmlDocument();
-            doc.Load("AssetDb.xml");
-
-            Asset asset = new Asset();
-            asset.Id = new Value() { value = "" + id };
-            XmlNode node = doc.SelectSingleNode("//asset[@id=" + id + "]");
-            asset.Label = new Value() { value = node.SelectSingleNode("//label").InnerText };
-            asset.Type = new Value() { value = node.SelectSingleNode("//type").InnerText };
-            asset.Nav = Convert.ToDouble(node.SelectSingleNode("//nav").InnerText.Replace(".", ","));
-            asset.Sharpe = Convert.ToDouble(node.SelectSingleNode("//sharpe").InnerText.Replace(".", ","));
-            asset.Currency = new Value() { value = node.SelectSingleNode("//currency").InnerText };
-
-            //XElement assetElt = doc.GetElementById()
-
-            //asset.Id = new Value() { value = assetElt.Attribute("id").Value };
-            //asset.Label = new Value() { value = assetElt.Element("label").Value };
-            //asset.Type = new Value() { value = assetElt.Element("type").Value };
-            //asset.Nav = Convert.ToDouble(assetElt.Element("nav").Value.Replace(".", ","));
-            //asset.Sharpe = Convert.ToDouble(assetElt.Element("sharpe").Value.Replace(".", ","));
-            //asset.Currency = new Value() { value = assetElt.Element("currency").Value };
-
-            return asset;
+            return GetAssets().FirstOrDefault(a => a.Id.value == id.ToString());
         }
 
         public List<Asset> GetAssetsId()
